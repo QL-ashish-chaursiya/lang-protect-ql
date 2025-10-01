@@ -28,6 +28,7 @@ export const Footer = (): JSX.Element => {
                 <span className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
                   GET STARTED FREE
                 </span>
+
                 <img
                   className="relative w-3 h-3 md:w-[10.47px] md:h-[10.47px]"
                   alt="Group"

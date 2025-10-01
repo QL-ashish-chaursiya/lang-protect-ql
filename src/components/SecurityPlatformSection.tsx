@@ -26,13 +26,15 @@ const SecurityPlatformSection = () => {
     return (
         <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-6 text-foreground">
-                    Unified Security platform
-                </h2>
-                <p className="text-lg text-[#202532] mb-16 max-w-3xl mx-auto">
-                    Stay ahead of evolving threats with enterprise-grade AI security solutions that
-                    safeguard your applications, employees, and data without slowing down innovation.
-                </p>
+                <h2 className="font-['IBM_Plex_Sans'] font-semibold text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[120%] sm:leading-[110%] md:leading-[105%] lg:leading-[100%] tracking-[0%] text-center mb-6 text-foreground">
+    Unified Security platform
+</h2>
+
+               <p className="font-['IBM_Plex_Sans'] font-normal text-[16px] sm:text-[16px] md:text-[18px] leading-[140%] sm:leading-[145%] md:leading-[150%] tracking-[0%] text-center text-[rgba(32, 37, 50, 1)] mb-16 max-w-3xl mx-auto">
+    Stay ahead of evolving threats with enterprise-grade AI security solutions that
+    safeguard your applications, employees, and data without slowing down innovation.
+</p>
+
 
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {securityFeatures.map((feature, index) => {
@@ -52,7 +54,7 @@ const SecurityPlatformSection = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>   
-                                    <CardDescription className="text-sm leading-relaxed text-[#202532] group-hover:text-white/90 transition-colors duration-300">
+                                    <CardDescription className="sm:text-[16px] leading-relaxed text-[#202532] group-hover:text-white/90 transition-colors duration-300">
                                         {feature.description}
                                     </CardDescription>
                                 </CardContent>
@@ -61,8 +63,11 @@ const SecurityPlatformSection = () => {
                     })}
                 </div>
 
-                <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl bg-white/60 p-6 shadow-md">
-                    <p className="max-w-xl text-sm text-foreground/70 text-left">Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.</p>
+                <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl  bg-[#F8F7FF] p-6 shadow-md">
+                    <p className="font-['Mozilla_Text'] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] sm:leading-[150%] md:leading-[160%] tracking-[0%] text-[rgba(25,22,47,1)] max-w-xl text-left">
+    Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
+</p>
+
                     <Button variant="cta" className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold text-white shadow">GET STARTED FREE</Button>
                 </div>
             </div>

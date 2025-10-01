@@ -14,7 +14,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-foreground mb-6 tracking-tight font-MozillaText">
+          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-medium text-foreground mb-6 tracking-tight font-MozillaText">
             Security Platform for AI Systems
           </h1>
           <p className="text-lg sm:text-xl text-[#202532] mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -33,12 +33,14 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-[200px]">
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-[#F0F0F0] rounded-2xl aspect-video flex items-center justify-center group cursor-pointer hover:bg-gray-200 transition-colors duration-300">
-              <div className="flex items-center space-x-3 text-gray-600 group-hover:text-gray-700 transition-colors">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
-                  <Play className="h-6 w-6 text-primary ml-1" />
-                </div>
-                <span className="text-lg font-medium">Product Video</span>
-              </div>
+              <video
+                className="rounded-2xl w-full h-full"
+                controls
+                poster="/Videos/placeholder.svg"
+              >
+                <source src="/Videos/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
