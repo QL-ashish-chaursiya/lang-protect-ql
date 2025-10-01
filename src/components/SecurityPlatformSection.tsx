@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import PrimaryBtn from "./common/PrimaryBtn";
 
 const SecurityPlatformSection = () => {
     const securityFeatures = [
@@ -25,8 +24,8 @@ const SecurityPlatformSection = () => {
     ];
 
     return (
-        <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20">
-            <div className="max-w-6xl mx-auto text-center">
+        <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20 w-full">
+            <div className="mx-auto text-center w-[1262px]">
                 <h2 className="text-[#19162F] mozilla-text fonSee What People Have To Sayt-semibold text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[120%] sm:leading-[110%] md:leading-[105%] lg:leading-[100%] tracking-[0%] text-center mb-6 text-foreground sm:font-semibold">
     Unified Security platform
 </h2>
@@ -65,20 +64,11 @@ const SecurityPlatformSection = () => {
                 </div>
 
                  <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl bg-[#F8F7FF] p-6 shadow-md">
-  <p className="w-[85%] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] sm:leading-[150%] md:leading-[160%] tracking-[0%] text-[rgba(25,22,47,1)] text-left">
+  <p className="w-[75%] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] sm:leading-[150%] md:leading-[160%] tracking-[0%] text-[rgba(25,22,47,1)] text-left">
     Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
   </p>
 
-   <Button className="px-6 md:px-8 py-3 md:py-3.5 gradient-bg h-12 md:h-[53px] rounded-xl hover:opacity-90">
-            <span className="font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
-               GET STARTED FREE
-            </span>
-            <img
-              className="w-3 h-3 md:w-[10.47px] md:h-[10.47px] ml-2.5"
-              alt="Group"
-              src="/Images/RightArrow.png"
-            />
-          </Button>
+     <PrimaryBtn />
 </div>
 
             </div>

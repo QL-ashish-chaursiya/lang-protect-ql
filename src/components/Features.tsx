@@ -1,3 +1,4 @@
+import PrimaryBtn from "./common/PrimaryBtn";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
  
@@ -24,7 +25,7 @@ const featureCards = [
 
 export const FeaturesSection = (): JSX.Element => {
   return (
-    <section className="w-full bg-[#f8f7ff] py-12 md:py-16 lg:py-[109px]">
+    <section className="w-full bg-[#f8f7ff] py-12 md:py-16 lg:py-[109px]" id="solution">
       <div className="max-w-[1262px] mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[25px]">
         <div className="flex flex-col w-full lg:w-[407px] items-start justify-center gap-6 md:gap-8">
           <div className="flex flex-col items-start gap-4 w-full">
@@ -37,16 +38,7 @@ export const FeaturesSection = (): JSX.Element => {
             </p>
           </div>
 
-          <Button className="px-6 md:px-8 py-3 md:py-3.5 gradient-bg h-12 md:h-[53px] rounded-xl hover:opacity-90">
-            <span className="font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
-              Let&apos;s Secure your AI App
-            </span>
-            <img
-              className="w-3 h-3 md:w-[10.47px] md:h-[10.47px] ml-2.5"
-              alt="Group"
-              src="/Images/RightArrow.png"
-            />
-          </Button>
+           <PrimaryBtn label="Let’s Secure your AI App"  handle={()=>{}} />
             
         </div>
 

@@ -57,7 +57,7 @@ export const Testimonial = (): JSX.Element => {
 
   return (
     <section className="relative w-full py-12 md:py-14">
-      <div className="flex flex-col w-full max-w-[1256px] mx-auto items-center gap-8 md:gap-[50px] px-4 md:px-8">
+      <div className="flex flex-col w-full max-w-[1262px] mx-auto items-center gap-8 md:gap-[50px] px-4 md:px-8">
         <header className="flex flex-col w-full max-w-[593px] items-center justify-center gap-4">
           <h2 className=" text-[#19162F] mozilla-text font-semibold text-textprimary-color text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
             <span   >See What People H</span>
@@ -81,14 +81,14 @@ export const Testimonial = (): JSX.Element => {
               className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none w-full`}
             >
               <CardContent className="p-4 flex flex-col gap-2">
-                <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-sm tracking-[0] leading-[normal]">
-                  <span className="font-semibold text-[#19162f]">
+                <div className="text-sm tracking-[0] leading-[normal]">
+                  <span className="font-semibold text-[#202532]">
                     {testimonial.name} -
                   </span>
                   <span className="font-semibold text-black">&nbsp;</span>
-                  <span className="text-[#4e5976]">{testimonial.title}</span>
+                  <span className="text-[#4E5976]">{testimonial.title}</span>
                 </div>
-                <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-textprimary-color text-[15px] tracking-[0] leading-[normal]">
+                <div className="text-[#202532] mozilla-text font-light text-textprimary-color text-[15px] tracking-[0] leading-[normal]">
                   {testimonial.content}
                 </div>
               </CardContent>

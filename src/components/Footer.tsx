@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import React from "react";
+import { handleRedirect } from "@/lib/utils";
+import PrimaryBtn from "./common/PrimaryBtn";
 
 export const Footer = (): JSX.Element => {
   const navigationLinks = ["How it works", "Solutions", "Blog"];
@@ -23,18 +25,7 @@ export const Footer = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="inline-flex items-start gap-3.5 relative flex-[0_0_auto]">
-              <Button className="inline-flex md:h-[53px] items-center justify-center gap-2.5 px-6 md:px-8 py-3 md:py-3.5 relative flex-[0_0_auto] rounded-xl  gradient-bg hover:opacity-90 h-auto">
-                <span className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
-                  GET STARTED FREE
-                </span>
-                <img
-                  className="relative w-3 h-3 md:w-[10.47px] md:h-[10.47px]"
-                  alt="Group"
-                  src="/Images/RightArrow.png"
-                />
-              </Button>
-            </div>
+             <PrimaryBtn />
           </div>
         </div>
 

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { handleRedirect } from "@/lib/utils";
 import { ArrowRight, Play } from "lucide-react";
+import PrimaryBtn from "./common/PrimaryBtn";
 
 const HeroSection = () => {
   return (
@@ -8,9 +10,9 @@ const HeroSection = () => {
       {/* Background image */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <img
-            src="/Images/BannerCenter.svg"    
+            src="/Images/banner.png"    
             alt="Background Illustration"
-            className="max-w-xl w-full opacity-80 lg:max-h-[753px] pt-40"
+            className="max-w-[431px] w-full lg:max-h-[753px] pt-40"
           />
         </div>
         <div className="text-center max-w-4xl mx-auto">
@@ -23,14 +25,7 @@ const HeroSection = () => {
             unified security platform, ensuring compliance and resilience as you integrate AI into
             critical workflows.
           </p>
-          <Button variant="cta" size="lg" className="mb-16 hover:opacity-90 gradient-bg rounded-xl">
-            GET STARTED FREE
-              <img
-              className="w-3 h-3 md:w-[10.47px] md:h-[10.47px] ml-2.5"
-              alt="Group"
-              src="/Images/RightArrow.png"
-            />
-          </Button>
+          <PrimaryBtn />
         </div>
       </div>  
       {/* video section */}
