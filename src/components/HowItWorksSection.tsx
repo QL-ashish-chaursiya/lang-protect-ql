@@ -12,10 +12,10 @@ const HowItWorksSection = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent mozilla-text">
             How LangProtect Secures your AI System
           </h2>
-          <p className="text-lg text-[#8BA1FE] max-w-3xl mx-auto">
+          <p className="text-lg text-[#8BA1FE] max-w-3xl mx-auto  mozilla-text font-light">
             By offering sanitization, detection of harmful language, prevention of data leakage,
             and resistance against prompt injection attacks, LangProtect ensures that
             interactions with your LLMs remain safe and secure.

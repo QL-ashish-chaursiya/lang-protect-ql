@@ -4,19 +4,19 @@ import { Card, CardContent } from "./ui/card";
 
 const featureCards = [
   {
-    title: "Fully LLM-Agnostic",
+    title: "Seamless Integration",
     description:
-      "Bridge the gap between employees and GenAI tools with built-in safeguards that ensure responsible, secure, and compliant AI adoption at every level.",
-    titleFont: "[font-family:'IBM_Plex_Sans',Helvetica]",
+      "Stay compliant and secure by design a drop-in layer for your AI apps and workflows.",
+  
     image: "/Images/Layer_1.png",
     imageClasses:
       "absolute h-[64.87%] top-[44.55%] left-[calc(50.00%_-_5px)] w-[209px]",
   },
   {
-    title: "Seamless integration into your existing AI and tech stack",
+    title: "Fully LLM-Agnostic",
     description:
-      "Bridge the gap between employees and GenAI tools with built-in safeguards that ensure responsible, secure, and compliant AI adoption at every level.",
-    titleFont: "[font-family:'Mozilla_Text',Helvetica]",
+      "Works with ChatGPT, Claude, Gemini, or any other system. Your AI choice stays yours security just works.",
+    
     image: "/Images/Group.png",
     imageClasses: "absolute top-[201px] left-[196px] w-[211px] h-[268px]",
   },
@@ -28,18 +28,17 @@ export const FeaturesSection = (): JSX.Element => {
       <div className="max-w-[1262px] mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[25px]">
         <div className="flex flex-col w-full lg:w-[407px] items-start justify-center gap-6 md:gap-8">
           <div className="flex flex-col items-start gap-4 w-full">
-            <h2 className="[font-family:'IBM_Plex_Sans',Helvetica] font-semibold text-[#353535] text-2xl md:text-3xl lg:text-[40px] tracking-[0] leading-tight md:leading-[normal]">
+            <h2 className="text-[#19162F] mozilla-text font-semibold text-2xl md:text-3xl lg:text-[40px] tracking-[0] leading-tight md:leading-[normal]">
               Enterprise-Grade AI Security
             </h2>
 
-            <p className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-[#727886] text-base md:text-lg tracking-[0] leading-6 md:leading-[27px]">
-              Easly Intgration in minutes & Get Instant Protection and
-              Insights
+            <p className="text-[#202532] mozilla-text font-light  text-base md:text-lg tracking-[0] leading-6 md:leading-[27px]">
+              Deploy in minutes, safeguard instantly. Unified AI security with full visibility and control. Trusted by healthcare, fintech, and enterprise teams to secure AI adoption.
             </p>
           </div>
 
           <Button className="px-6 md:px-8 py-3 md:py-3.5 gradient-bg h-12 md:h-[53px] rounded-xl hover:opacity-90">
-            <span className="[font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
+            <span className="font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
               Let&apos;s Secure your AI App
             </span>
             <img
@@ -60,17 +59,17 @@ export const FeaturesSection = (): JSX.Element => {
               <CardContent className="flex flex-col h-full items-start justify-between p-6 md:p-8 lg:p-9 relative">
                 <div className="flex flex-col items-start gap-3 w-full">
                   <h3
-                    className={`${card.titleFont} font-semibold ${index === 0 ? "text-[#19162f]" : "font-bold text-black"} text-lg md:text-xl tracking-[0] leading-[normal]`}
+                    className={`mozilla-text font-semibold ${index === 0 ? "text-[#19162f]" : "font-bold text-black"} text-lg md:text-xl tracking-[0] leading-[normal]`}
                   >
                     {card.title}
                   </h3>
 
-                  <p className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-[#202532] text-sm md:text-[15px] tracking-[0] leading-[normal]">
+                  <p className="font-light  text-[#202532] text-sm md:text-[15px] tracking-[0] leading-[normal]">
                     {card.description}
                   </p>
                 </div>
 
-                <Button
+                {/* <Button
                   variant="outline"
                   className="inline-flex items-center justify-center gap-1 px-4 md:px-5 py-2 md:py-3 rounded-[50px] border-[0.5px] border-solid border-[#beb4ff] bg-transparent hover:bg-gray-50 h-auto mt-4 md:mt-0"
                 >
@@ -78,7 +77,7 @@ export const FeaturesSection = (): JSX.Element => {
                     Learn More
                   </span>
                   <img className="w-5 h-5 md:w-6 md:h-6" alt="Frame" src="/Images/TiltArrow.png" />
-                </Button>
+                </Button> */}
 
                 <img
                   className={`hidden md:block ${card.imageClasses}`}

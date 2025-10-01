@@ -1,4 +1,4 @@
-@import './assets/fonts/fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -133,4 +133,8 @@
 }
 html, body {
   overflow-x: hidden;
+  font-family: "Mozilla Text", sans-serif;
+}
+.mozilla-text {
+  font-family: "Mozilla Text", sans-serif;
 }

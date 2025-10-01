@@ -13,11 +13,11 @@ export const Footer = (): JSX.Element => {
 
           <div className="flex flex-col w-full max-w-[810px] items-start gap-8 md:gap-12 relative z-10 p-6 md:p-12">
             <div className="flex flex-col items-start gap-4 md:gap-5 relative self-stretch w-full flex-[0_0_auto]">
-              <h2 className="relative self-stretch [font-family:'Mozilla_Text',Helvetica] font-bold text-white text-2xl md:text-3xl lg:text-[40px] tracking-[0] leading-tight md:leading-[normal]">
+              <h2 className="relative self-stretch [font-family:'Mozilla_Text',Helvetica] font-bold text-white text-2xl md:text-3xl lg:text-[40px] tracking-[0] leading-tight md:leading-[normal] mozilla-text">
                 Ready to Secure your AI End-to-End?
               </h2>
 
-              <p className="relative self-stretch [font-family:'Mozilla_Text',Helvetica] font-normal text-white text-base md:text-lg tracking-[0] leading-6 md:leading-[27px]">
+              <p className="relative self-stretch  font-light text-white text-base md:text-lg tracking-[0] leading-6 md:leading-[27px]">
                 Join now & get started on your journey to secure all of your AI
                 Systems with simple configurations.
               </p>
@@ -28,7 +28,6 @@ export const Footer = (): JSX.Element => {
                 <span className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
                   GET STARTED FREE
                 </span>
-
                 <img
                   className="relative w-3 h-3 md:w-[10.47px] md:h-[10.47px]"
                   alt="Group"
@@ -47,12 +46,12 @@ export const Footer = (): JSX.Element => {
               <div className="flex flex-col w-full max-w-[423px] items-start justify-center gap-6 md:gap-10 relative flex-[0_0_auto]">
                 <div className="flex flex-col items-start justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex flex-col items-start justify-center gap-3.5 relative flex-[0_0_auto]">
-                    <h3 className="relative self-stretch bg-[linear-gradient(90deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-semibold text-transparent text-2xl md:text-[32px] text-center tracking-[0] leading-[normal]">
+                    <h3 className="relative self-stretch bg-[linear-gradient(90deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-semibold text-transparent text-2xl md:text-[32px] text-center tracking-[0] leading-[normal] mozilla-text">
                       LangProtect
                     </h3>
                   </div>
 
-                  <p className="relative self-stretch bg-[linear-gradient(143deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-normal text-transparent text-base md:text-lg tracking-[0] leading-6 md:leading-[28.8px]">
+                  <p className="relative self-stretch bg-[linear-gradient(143deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent]   font-light text-transparent text-base md:text-lg tracking-[0] leading-6 md:leading-[28.8px]">
                     Enterprise-grade security layer for AI systems. Protect your
                     LLMs from threats.
                   </p>

@@ -14,18 +14,22 @@ const HeroSection = () => {
           />
         </div>
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-medium text-foreground mb-6 tracking-tight font-MozillaText">
+          <h1 className="text-4xl text-[#19162F] mozilla-text sm:text-5xl lg:text-[56px] font-medium text-foreground mb-6 tracking-tight">
             Security Platform for AI Systems
           </h1>
-          <p className="text-lg sm:text-xl text-[#202532] mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl  text-[#202532] mb-8 max-w-3xl mx-auto leading-relaxed mozilla-text">
             LangProtect secures your AI infrastructure, applications, workflows, and teams against
             emerging threats. Our three solutions Armor, Guardia, and Breacher are built on a
             unified security platform, ensuring compliance and resilience as you integrate AI into
             critical workflows.
           </p>
-          <Button variant="cta" size="lg" className="mb-16">
+          <Button variant="cta" size="lg" className="mb-16 hover:opacity-90 gradient-bg rounded-xl">
             GET STARTED FREE
-            <ArrowRight className="ml-2 h-5 w-5" />
+              <img
+              className="w-3 h-3 md:w-[10.47px] md:h-[10.47px] ml-2.5"
+              alt="Group"
+              src="/Images/RightArrow.png"
+            />
           </Button>
         </div>
       </div>  

@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         MozillaText : ['MozillaText', 'sans-serif'],
+        // PlayfairItalic: []
       },
       colors: {
         border: "hsl(var(--border))",

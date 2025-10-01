@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const SecurityPlatformSection = () => {
     const securityFeatures = [
@@ -26,11 +27,11 @@ const SecurityPlatformSection = () => {
     return (
         <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="font-['IBM_Plex_Sans'] font-semibold text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[120%] sm:leading-[110%] md:leading-[105%] lg:leading-[100%] tracking-[0%] text-center mb-6 text-foreground">
+                <h2 className="text-[#19162F] mozilla-text fonSee What People Have To Sayt-semibold text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[120%] sm:leading-[110%] md:leading-[105%] lg:leading-[100%] tracking-[0%] text-center mb-6 text-foreground sm:font-semibold">
     Unified Security platform
 </h2>
 
-               <p className="font-['IBM_Plex_Sans'] font-normal text-[16px] sm:text-[16px] md:text-[18px] leading-[140%] sm:leading-[145%] md:leading-[150%] tracking-[0%] text-center text-[rgba(32, 37, 50, 1)] mb-16 max-w-3xl mx-auto">
+               <p className="text-[#202532] mozilla-text font-light text-[16px] sm:text-[16px] md:text-[18px] leading-[140%] sm:leading-[145%] md:leading-[150%] tracking-[0%] text-center text-[rgba(32, 37, 50, 1)] mb-16 max-w-3xl mx-auto">
     Stay ahead of evolving threats with enterprise-grade AI security solutions that
     safeguard your applications, employees, and data without slowing down innovation.
 </p>
@@ -63,13 +64,23 @@ const SecurityPlatformSection = () => {
                     })}
                 </div>
 
-                <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl  bg-[#F8F7FF] p-6 shadow-md">
-                    <p className="font-['Mozilla_Text'] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] sm:leading-[150%] md:leading-[160%] tracking-[0%] text-[rgba(25,22,47,1)] max-w-xl text-left">
+                 <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl bg-[#F8F7FF] p-6 shadow-md">
+  <p className="w-[85%] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] sm:leading-[150%] md:leading-[160%] tracking-[0%] text-[rgba(25,22,47,1)] text-left">
     Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
-</p>
+  </p>
 
-                    <Button variant="cta" className="inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-semibold text-white shadow">GET STARTED FREE</Button>
-                </div>
+   <Button className="px-6 md:px-8 py-3 md:py-3.5 gradient-bg h-12 md:h-[53px] rounded-xl hover:opacity-90">
+            <span className="font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
+               GET STARTED FREE
+            </span>
+            <img
+              className="w-3 h-3 md:w-[10.47px] md:h-[10.47px] ml-2.5"
+              alt="Group"
+              src="/Images/RightArrow.png"
+            />
+          </Button>
+</div>
+
             </div>
         </section>
     );

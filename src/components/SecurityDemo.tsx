@@ -11,12 +11,12 @@ export const  SecurityDemo = (): JSX.Element => {
       <div className="absolute top-8 md:top-[59px] left-[100px] md:left-[291px] w-[800px] md:w-[1547px] h-[250px] md:h-[500px] rounded-[400px/125px] md:rounded-[773.51px/250.01px] border border-solid rotate-[131.34deg] blur-[50px] md:blur-[87px] border-[#5039ff] bg-[linear-gradient(146deg,rgba(255,228,170,0.14)_0%,rgba(209,44,255,0.14)_52%,rgba(255,228,170,0.14)_100%)]" />
 
       <div className="relative z-10 flex flex-col items-center gap-8 md:gap-14 px-4 md:px-8 max-w-6xl mx-auto">
-        <div className="flex flex-col items-center gap-3.5 max-w-[772px]">
-          <h2 className="bg-[linear-gradient(90deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-semibold text-2xl md:text-3xl lg:text-[42px] text-center tracking-[0] leading-tight md:leading-[normal]">
+        <div className="flex flex-col items-center gap-3.5 max-w-[774px]">
+          <h2 className="bg-[linear-gradient(90deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-semibold text-2xl md:text-3xl lg:text-[42px] text-center tracking-[0] leading-tight md:leading-[normal] mozilla-text">
             Try out LangProtect Security Yourself
           </h2>
 
-          <p className="[font-family:'Mozilla_Text',Helvetica] font-normal text-[#8ba1fe] text-base md:text-lg lg:text-xl text-center tracking-[0] leading-6 md:leading-[30px]">
+          <p className="font-light text-[#8ba1fe] text-base md:text-lg lg:text-xl text-center tracking-[0] leading-6 md:leading-[30px]">
             Write a prompt to check if its safe or try tricking it to reveal a
             secret.
           </p>
