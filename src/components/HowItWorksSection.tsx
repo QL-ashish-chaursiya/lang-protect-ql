@@ -24,7 +24,7 @@ const HowItWorksSection = () => {
       </div>
       <div className="flex justify-center relative z-10">
         <img
-          src="./Images/HowItWork.png"
+          src="./Images/howItWork.svg"
           alt="LangProtect Demo"
           className="max-w-7xl w-full"
         />

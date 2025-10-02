@@ -6,15 +6,14 @@ const Header = () => {
   return (
     <header className="w-full bg-transparent backdrop-blur sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">  
+        <div className="flex items-center justify-between h-[5.4rem]">  
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src="./Images/logo.svg" alt="logo" />
-            <span className="text-2xl font-bold text-foreground">Lang Protect</span>
+           <img src="Images/logo-blue.svg" className="w-[193px] h-[38px]"/>
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 mozilla-text  font-light">
+          <nav className="hidden md:flex items-center space-x-10 mozilla-text  font-light gap-x-6">
              
             <HashLink smooth to="#howWork" className="text-base font-light">
   How it works

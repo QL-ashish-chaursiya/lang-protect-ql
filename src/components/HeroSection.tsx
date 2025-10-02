@@ -12,10 +12,10 @@ const HeroSection = () => {
           <img
             src="/Images/banner.png"    
             alt="Background Illustration"
-            className="max-w-[431px] w-full lg:max-h-[753px] pt-40"
+            className="max-w-[431px] w-full   pt-[15rem]"
           />
         </div>
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl text-[#19162F] mozilla-text sm:text-5xl lg:text-[56px] font-medium text-foreground mb-6 tracking-tight">
             Security Platform for AI Systems
           </h1>

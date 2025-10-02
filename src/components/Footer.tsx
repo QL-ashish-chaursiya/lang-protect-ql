@@ -3,9 +3,10 @@ import { Button } from "./ui/button";
 import React from "react";
 import { handleRedirect } from "@/lib/utils";
 import PrimaryBtn from "./common/PrimaryBtn";
-
+import { HashLink } from 'react-router-hash-link';
 export const Footer = (): JSX.Element => {
-  const navigationLinks = ["How it works", "Solutions", "Blog"];
+ 
+  const navigationLinks = [ {label:'How it works',link:'#howWork'}, {label:'Solutions',link:'#solution'},,{label:'Blog',link:'#'}];
 
   return (
     <div className="flex flex-col w-full items-start gap-12 md:gap-[100px] relative">
@@ -37,9 +38,7 @@ export const Footer = (): JSX.Element => {
               <div className="flex flex-col w-full max-w-[423px] items-start justify-center gap-6 md:gap-10 relative flex-[0_0_auto]">
                 <div className="flex flex-col items-start justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex flex-col items-start justify-center gap-3.5 relative flex-[0_0_auto]">
-                    <h3 className="relative self-stretch bg-[linear-gradient(90deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-semibold text-transparent text-2xl md:text-[32px] text-center tracking-[0] leading-[normal] mozilla-text">
-                      LangProtect
-                    </h3>
+                    <img src="Images/logo-blue.svg" className="w-[193px] h-[38px] ml-[-9px]"/>
                   </div>
 
                   <p className="relative self-stretch bg-[linear-gradient(143deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent]   font-light text-transparent text-base md:text-lg tracking-[0] leading-6 md:leading-[28.8px]">
@@ -58,7 +57,7 @@ export const Footer = (): JSX.Element => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/Images/LinkedIn.png"
+                    src="/Images/LinkedIn.svg"
                     alt="LinkedIn"
                     className="h-8 w-8"
                   />
@@ -69,7 +68,7 @@ export const Footer = (): JSX.Element => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/Images/Git.png" alt="GitHub" className="h-8 w-8" />
+                  <img src="/Images/Git.svg" alt="GitHub" className="h-8 w-8" />
                 </Link>
 
                 <Link
@@ -77,7 +76,7 @@ export const Footer = (): JSX.Element => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/Images/X.png" alt="X" className="h-8 w-8" />
+                  <img src="/Images/X.svg" alt="X" className="h-8 w-8" />
                 </Link>
 
                 <Link
@@ -86,7 +85,7 @@ export const Footer = (): JSX.Element => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/Images/Email.png"
+                    src="/Images/Email.svg"
                     alt="Email"
                     className="h-8 w-8"
                   />
@@ -95,13 +94,11 @@ export const Footer = (): JSX.Element => {
 
               <nav className="inline-flex flex-col md:flex-row items-start md:items-center justify-end gap-4 md:gap-[34px] relative flex-[0_0_auto]">
                 {navigationLinks.map((link, index) => (
-                  <React.Fragment key={link}>
-                    <a
-                      href="#"
-                      className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-normal text-[#fbfbfb] text-base md:text-lg tracking-[0] leading-[normal] hover:opacity-80"
-                    >
-                      {link}
-                    </a>
+                  <React.Fragment key={index}>
+                    
+                         <HashLink smooth to={link.link}   className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-normal text-[#fbfbfb] text-base md:text-lg tracking-[0] leading-[normal] hover:opacity-80">
+                    {link.label}
+                    </HashLink>
                     {index < navigationLinks.length - 1 && (
                       <img
                         className="hidden md:block relative w-px h-[14.99px]"

@@ -42,7 +42,7 @@ const SecurityPlatformSection = () => {
                         return (
                             <Card
                                 key={index}
-                                className="group border-[#E3E6FF] bg-[#F8F7FF] transition-all duration-300 hover:scale-105 cursor-pointer hover:bg-[#0A0818] hover:text-white hover:shadow-2xl hover:shadow-primary/25"
+                                className="group border-[#E3E6FF] bg-[#F8F7FF] transition-all duration-300 hover:scale-105 cursor-pointer hover:bg-[#0A0818] hover:text-white hover:shadow-2xl hover:shadow-primary/25 rounded-[24px]"
                             >
                                 <CardHeader className="pb-4 flex flex-col items-center space-y-4">
                                     <img
