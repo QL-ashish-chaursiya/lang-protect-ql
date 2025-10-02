@@ -36,7 +36,7 @@ const SecurityPlatformSection = () => {
 </p>
 
 
-                <div className="grid md:grid-cols-3 gap-8 mb-16">
+                <div className="grid md:grid-cols-3 gap-[20px] mb-16">
                     {securityFeatures.map((feature, index) => {
                         // const IconComponent = feature.icon;
                         return (
@@ -54,7 +54,7 @@ const SecurityPlatformSection = () => {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>   
-                                    <CardDescription className="sm:text-[16px] leading-relaxed text-[#202532] group-hover:text-white/90 transition-colors duration-300">
+                                    <CardDescription className="sm:text-[16px] leading-relaxed text-[#4E5976] group-hover:text-white transition-colors duration-300">
                                         {feature.description}
                                     </CardDescription>
                                 </CardContent>
