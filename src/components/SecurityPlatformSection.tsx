@@ -63,7 +63,7 @@ const SecurityPlatformSection = () => {
                     })}
                 </div>
 
-                 <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl bg-[#F8F7FF] p-6 shadow-md">
+                 <div className="mt-10 flex items-center justify-between gap-4 rounded-2xl bg-[#F8F7FF] p-6">
   <p className="w-[75%] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[140%] sm:leading-[150%] md:leading-[160%] tracking-[0%] text-[rgba(25,22,47,1)] text-left">
     Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
   </p>

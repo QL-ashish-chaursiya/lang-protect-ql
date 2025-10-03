@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { LANG_LINK } from "@/lib/constants";
 import { handleRedirect } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
@@ -13,21 +14,52 @@ const Header = () => {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-10 mozilla-text  font-light gap-x-6">
-             
-            <HashLink smooth to="#howWork" className="text-base font-light">
-  How it works
-</HashLink>
-            <HashLink smooth to="#solution"  className="text-base font-light">
-              Solutions
-            </HashLink>
-            <HashLink  smooth to="#Testimonials" className="text-base font-light">
-              Testimonials
-            </HashLink>
-             <HashLink  smooth to="#Game" className="text-base font-light">
-              Play Game
-            </HashLink>
-          </nav>
+          <nav className="hidden md:flex items-center space-x-10 mozilla-text font-light gap-x-6">
+  <HashLink
+    smooth
+    to="#howWork"
+    className="relative text-base font-light transition-colors duration-500 hover:text-[#482CFF]
+ after:content-[''] after:absolute after:left-0 after:bottom-0 
+               after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-[#482CFF] after:to-[#AAD8FF] 
+               after:transition-all after:duration-500 hover:after:w-full"
+  >
+    How it works
+  </HashLink>
+
+  <HashLink
+    smooth
+    to="#solution"
+    className="relative text-base font-light transition-colors duration-500 hover:text-[#482CFF]
+ after:content-[''] after:absolute after:left-0 after:bottom-0 
+               after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-[#482CFF] after:to-[#AAD8FF] 
+               after:transition-all after:duration-500 hover:after:w-full"
+  >
+    Solutions
+  </HashLink>
+
+  <HashLink
+    smooth
+    to="#Testimonials"
+    className="relative text-base font-light transition-colors duration-500 hover:text-[#482CFF]
+ after:content-[''] after:absolute after:left-0 after:bottom-0 
+               after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-[#482CFF] after:to-[#AAD8FF] 
+               after:transition-all after:duration-500 hover:after:w-full"
+  >
+    Testimonials
+  </HashLink>
+
+  <HashLink
+    smooth
+    to="#Game"
+    className="relative text-base font-light transition-colors duration-500 hover:text-[#482CFF]
+ after:content-[''] after:absolute after:left-0 after:bottom-0 
+               after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-[#482CFF] after:to-[#AAD8FF] 
+               after:transition-all after:duration-500 hover:after:w-full"
+  >
+    Become an AI Hacker
+  </HashLink>
+</nav>
+
 
           {/* CTA Buttons */}
           
@@ -39,7 +71,7 @@ const Header = () => {
           BOOK A DEMO
         </Button>
 
-        <Button className="h-[53px] px-8 py-3.5 rounded-xl bg-[linear-gradient(143deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-base tracking-[0] leading-[normal] whitespace-nowrap hover:opacity-90 transition-opacity gradient-bg" onClick={() => handleRedirect()}>
+        <Button className="h-[53px] px-8 py-3.5 rounded-xl bg-[linear-gradient(143deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-base tracking-[0] leading-[normal] whitespace-nowrap hover:opacity-90 transition-opacity gradient-bg" onClick={() => handleRedirect(LANG_LINK)}>
           GET STARTED FREE
         </Button>
       </div>

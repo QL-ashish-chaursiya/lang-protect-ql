@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import PrimaryBtn from "./common/PrimaryBtn";
+import { GAME_LINK } from "@/lib/constants";
  
 
 export const Game = (): JSX.Element => {
@@ -86,7 +87,7 @@ export const Game = (): JSX.Element => {
           </div>
         </header>
 
-        <PrimaryBtn label="Become an AI Hacker" />
+        <PrimaryBtn label="Become an AI Hacker" url={GAME_LINK} />
       </section>
     </main>
   );

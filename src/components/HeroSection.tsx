@@ -21,7 +21,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-lg sm:text-xl  text-[#202532] mb-8 max-w-3xl mx-auto leading-relaxed mozilla-text">
             LangProtect secures your AI infrastructure, applications, workflows, and teams against
-            emerging threats. Our three solutions Armor, Guardia, and Breacher are built on a
+            emerging threats. Our three solutions Armor, Guardia, and Breachers Red are built on a
             unified security platform, ensuring compliance and resilience as you integrate AI into
             critical workflows.
           </p>

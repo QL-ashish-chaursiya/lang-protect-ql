@@ -10,7 +10,7 @@ const FAQ = () => {
     {
       id: "item-1",
       question: "What exactly does LangProtect do?",
-      answer: "LangProtect is an AI security platform that protects your infrastructure, applications, workflows, and teams from emerging AI threats. Our three solutions — Armor (For developers), Guardia (employee & team safety), and Breachers (AI red teaming) — work together to block prompt injections, prevent PII/PHI leaks, detect bias, and ensure compliance while your team can accelerate on Gen-AI Innovation."
+      answer: "LangProtect is an AI security platform that protects your infrastructure, applications, workflows, and teams from emerging AI threats. Our three solutions — Armor (For developers), Guardia (employee & team safety), and Breachers Red (AI red teaming) — work together to block prompt injections, prevent PII/PHI leaks, detect bias, and ensure compliance while your team can accelerate on Gen-AI Innovation."
     },
     {
       id: "item-2", 
@@ -29,13 +29,13 @@ const FAQ = () => {
     },
     {
       id: "item-5",
-      question: "What is Breachers and why do I need it?",
-      answer: "Breachers is our AI red teaming service that stress-tests your AI Applications. Our experts simulate real-world attacks such as prompt injections, data exfiltration attempts, and bias exploitation to uncover vulnerabilities — so you can fix them before adversaries exploit them."
+      question: "What is Breachers Red and why do I need it?",
+      answer: "Breachers Red is our AI red teaming service that stress-tests your AI Applications. Our experts simulate real-world attacks such as prompt injections, data exfiltration attempts, and bias exploitation to uncover vulnerabilities — so you can fix them before adversaries exploit them."
     },
     {
       id: "item-6",
       question: "How quickly can we get started with LangProtect?",
-      answer: "Integration takes minutes, not months. For developers, Armor is available as an API layer. For employees, Guardia is offered as a Chrome extension with a central dashboard. Red teaming (Breachers) can be scheduled as an engagement with our team. You start seeing value — and protection — instantly."
+      answer: "Integration takes minutes, not months. For developers, Armor is available as an API layer. For employees, Guardia is offered as a Chrome extension with a central dashboard. Red teaming (Breachers Red) can be scheduled as an engagement with our team. You start seeing value — and protection — instantly."
     },
     {
       id: "item-7",
@@ -52,7 +52,7 @@ const FAQ = () => {
             <h2
               className="text-[#19162F] mozilla-text font-bold text-[44px] leading-[120%] tracking-[0.02em] text-center text-foreground mb-4"
             >
-              Frequently asked question
+              Frequently Asked Questions
             </h2>
           </div>
           

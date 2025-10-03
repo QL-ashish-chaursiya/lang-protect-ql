@@ -1,18 +1,20 @@
  import { handleRedirect } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { ArrowRight, ChevronRight } from "lucide-react";
+import { LANG_LINK } from "@/lib/constants";
 
 type PrimaryBtnProps = {
   isImg?: boolean;
  label?:string;
-  handle?: () => void;
+  handle?: (url:any) => void;
+  url?:string
 };
 
-const PrimaryBtn = ({ isImg = true,label='GET STARTED FREE', handle=handleRedirect }: PrimaryBtnProps) => {
+const PrimaryBtn = ({ isImg = true,label='GET STARTED FREE', handle=handleRedirect,url=LANG_LINK }: PrimaryBtnProps) => {
   return (
     <div className="inline-flex items-start gap-3.5 relative flex-[0_0_auto]">
       <Button
-        onClick={handle}
+        onClick={ () => handle(url)}
         className="relative inline-flex md:h-[53px] items-center justify-center gap-2.5 px-6 md:px-8 py-3 md:py-3.5 flex-[0_0_auto] rounded-xl gradient-bg h-auto overflow-hidden group"
       >
         {/* Sliding white overlay */}

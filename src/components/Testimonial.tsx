@@ -1,4 +1,4 @@
-import { Card, CardContent } from "./ui/card";
+ import { Card, CardContent } from "./ui/card";
 export const Testimonial = (): JSX.Element => {
   const testimonials = [
     {
@@ -37,7 +37,7 @@ export const Testimonial = (): JSX.Element => {
       name: "James O'Neill",
       title: "CTO, Evercore Analytics (US)",
       content:
-        "With Breachers, the red-team assessment uncovered vulnerabilities in our LLM apps we didn't even know existed. Their AI-first penetration testing is leagues ahead of traditional audits.",
+        "With Breachers Red, the red-team assessment uncovered vulnerabilities in our LLM apps we didn't even know existed. Their AI-first penetration testing is leagues ahead of traditional audits.",
       bgColor: "bg-[#f3f5ff]",
       rounded: "rounded-3xl",
     },
@@ -56,24 +56,23 @@ export const Testimonial = (): JSX.Element => {
   const columnThree = testimonials.slice(4, 6);
 
   return (
-    <section className="relative w-full  md:mt-[55px] md:mb-[120px]" id="Testimonials">
+    <section className="relative w-full md:mt-[55px] md:mb-[120px]" id="Testimonials">
       <div className="flex flex-col w-full max-w-[1262px] mx-auto items-center gap-8 md:gap-[50px]">
         <header className="flex flex-col w-full max-w-[593px] items-center justify-center gap-4">
-          <h2 className=" text-[#19162F] mozilla-text font-semibold text-textprimary-color text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
+          <h2 className="text-[#19162F] mozilla-text font-semibold text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
             <span>See What People H</span>
-            <span className=" text-3xl md:text-4xl lg:text-[42px]">ave</span>
-            <span className=""> To Say</span>
+            <span className="text-3xl md:text-4xl lg:text-[42px]">ave</span>
+            <span> To Say</span>
           </h2>
           <div className="md:px-2">
-           <p className="w-full max-w-[584px]  font-light text-textsecondary-color text-base md:text-lg text-center tracking-[0] leading-6 md:leading-[27px]">
-            See how Lang Protect is helping users stay secure without
-            compromising productivity.
-          </p>
+            <p className="w-full max-w-[584px] font-light text-textsecondary-color text-base md:text-lg text-center tracking-[0] leading-6 md:leading-[27px]">
+              See how LangProtect is helping users stay secure without
+              compromising productivity.
+            </p>
           </div>
-          
         </header>
 
-        {/* Mobile: Single Column */}
+        {/* Mobile: Single Column (no scroll, normal list) */}
         <div className="flex md:hidden flex-col items-start gap-5 w-full">
           {testimonials.map((testimonial, index) => (
             <Card
@@ -88,7 +87,7 @@ export const Testimonial = (): JSX.Element => {
                   <span className="font-semibold text-black">&nbsp;</span>
                   <span className="text-[#4E5976]">{testimonial.title}</span>
                 </div>
-                <div className="text-[#202532] mozilla-text font-light text-textprimary-color text-[15px] tracking-[0] leading-[normal]">
+                <div className="text-[#202532] mozilla-text font-light text-[15px] leading-[normal]">
                   {testimonial.content}
                 </div>
               </CardContent>
@@ -96,80 +95,81 @@ export const Testimonial = (): JSX.Element => {
           ))}
         </div>
 
-        {/* Desktop: Three Columns */}
+        {/* Desktop: Three Columns with Infinite Scroll */}
         <div className="hidden md:flex items-start gap-[19px] w-full">
-          <div className="flex flex-col w-full max-w-[406px] items-start gap-5">
-            {columnOne.map((testimonial, index) => (
-              <Card
-                key={`col1-${index}`}
-                className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none`}
-              >
-                <CardContent className="p-4 flex flex-col gap-2">
-                  <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-sm tracking-[0] leading-[normal]">
-                    <span className="font-semibold text-[#19162f]">
-                      {testimonial.name} -
-                    </span>
-                    <span className="font-semibold text-black">&nbsp;</span>
-                    <span className="text-[#4e5976]">{testimonial.title}</span>
-                  </div>
-                  <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-textprimary-color text-[15px] tracking-[0] leading-[normal]">
-                    {testimonial.content}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="flex flex-col w-full max-w-[406px] items-start gap-5 pt-5">
-            {columnTwo.map((testimonial, index) => (
-              <Card
-                key={`col2-${index}`}
-                className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none`}
-              >
-                <CardContent className="p-4 flex flex-col gap-2">
-                  <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-sm tracking-[0] leading-[normal]">
-                    <span className="font-semibold text-[#19162f]">
-                      {testimonial.name} -
-                    </span>
-                    <span className="font-semibold text-black">&nbsp;</span>
-                    <span className="text-[#4e5976]">{testimonial.title}</span>
-                  </div>
-                  <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-textprimary-color text-[15px] tracking-[0] leading-[normal]">
-                    {testimonial.content}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="flex flex-col w-full max-w-[406px] items-start gap-5">
-            {columnThree.map((testimonial, index) => (
-              <Card
-                key={`col3-${index}`}
-                className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none`}
-              >
-                <CardContent
-                  className={`${index === 0 ? "p-6" : "p-4"} flex flex-col gap-2`}
+          {/* Column One */}
+          <div className="relative overflow-hidden h-[500px] flex flex-col w-full max-w-[406px]">
+            <div className="flex flex-col gap-5 animate-[scrollUp_10s_linear_infinite]">
+              {[...columnOne, ...columnOne].map((testimonial, index) => (
+                <Card
+                  key={`col1-${index}`}
+                  className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none`}
                 >
-                  <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-sm tracking-[0] leading-[normal]">
-                    <span className="font-semibold text-black">
-                      {testimonial.name} -
-                    </span>
-                    <span className="text-[#4e5976]">
-                      {` ${testimonial.title}`}
-                    </span>
-                  </div>
-                  <div className="[font-family:'IBM_Plex_Sans',Helvetica] font-normal text-textprimary-color text-[15px] tracking-[0] leading-[normal]">
-                    {testimonial.content}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <CardContent className="p-4 flex flex-col gap-2">
+                    <div className="text-sm font-normal">
+                      <span className="font-semibold text-[#19162f]">
+                        {testimonial.name} -
+                      </span>
+                      <span className="text-[#4e5976]">{testimonial.title}</span>
+                    </div>
+                    <div className="text-[#202532] font-light text-[15px]">
+                      {testimonial.content}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Column Two */}
+          <div className="relative overflow-hidden h-[500px] flex flex-col w-full max-w-[406px]">
+            <div className="flex flex-col gap-5 animate-[scrollUp_12s_linear_infinite]">
+              {[...columnTwo, ...columnTwo].map((testimonial, index) => (
+                <Card
+                  key={`col2-${index}`}
+                  className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none`}
+                >
+                  <CardContent className="p-4 flex flex-col gap-2">
+                    <div className="text-sm font-normal">
+                      <span className="font-semibold text-[#19162f]">
+                        {testimonial.name} -
+                      </span>
+                      <span className="text-[#4e5976]">{testimonial.title}</span>
+                    </div>
+                    <div className="text-[#202532] font-light text-[15px]">
+                      {testimonial.content}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Column Three */}
+          <div className="relative overflow-hidden h-[500px] flex flex-col w-full max-w-[406px]">
+            <div className="flex flex-col gap-5 animate-[scrollUp_10s_linear_infinite]">
+              {[...columnThree, ...columnThree].map((testimonial, index) => (
+                <Card
+                  key={`col3-${index}`}
+                  className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none`}
+                >
+                  <CardContent className="p-4 flex flex-col gap-2">
+                    <div className="text-sm font-normal">
+                      <span className="font-semibold text-[#19162f]">
+                        {testimonial.name} -
+                      </span>
+                      <span className="text-[#4e5976]">{testimonial.title}</span>
+                    </div>
+                    <div className="text-[#202532] font-light text-[15px]">
+                      {testimonial.content}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1380px] h-[125px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.4)_34%,rgba(255,255,255,1)_73%)]" />
     </section>
   );
 };
