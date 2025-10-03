@@ -24,6 +24,9 @@ const Header = () => {
             <HashLink  smooth to="#Testimonials" className="text-base font-light">
               Testimonials
             </HashLink>
+             <HashLink  smooth to="#Game" className="text-base font-light">
+              Play Game
+            </HashLink>
           </nav>
 
           {/* CTA Buttons */}

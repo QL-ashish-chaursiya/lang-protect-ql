@@ -56,11 +56,11 @@ export const Testimonial = (): JSX.Element => {
   const columnThree = testimonials.slice(4, 6);
 
   return (
-    <section className="relative w-full py-12 md:py-14" id="Testimonials">
-      <div className="flex flex-col w-full max-w-[1262px] mx-auto items-center gap-8 md:gap-[50px] px-4 md:px-8">
+    <section className="relative w-full  md:mt-[55px] md:mb-[120px]" id="Testimonials">
+      <div className="flex flex-col w-full max-w-[1262px] mx-auto items-center gap-8 md:gap-[50px]">
         <header className="flex flex-col w-full max-w-[593px] items-center justify-center gap-4">
           <h2 className=" text-[#19162F] mozilla-text font-semibold text-textprimary-color text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
-            <span   >See What People H</span>
+            <span>See What People H</span>
             <span className=" text-3xl md:text-4xl lg:text-[42px]">ave</span>
             <span className=""> To Say</span>
           </h2>

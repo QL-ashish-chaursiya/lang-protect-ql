@@ -7,6 +7,7 @@ import {SecurityDemo} from "@/components/SecurityDemo";
 import SecurityPlatformSection from "@/components/SecurityPlatformSection";
 import { Testimonial } from "@/components/Testimonial";
 import { FeaturesSection } from "@/components/Features";
+import { Game } from "@/components/Game";
  
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <Testimonial />
        <FeaturesSection />
        <SecurityDemo />
+       <Game />
       <FAQ />
     </div>
   );
