@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
@@ -27,29 +28,44 @@ export const  SecurityDemo = (): JSX.Element => {
             <div className="flex flex-col items-center gap-8 md:gap-12">
               <div className="flex flex-col gap-4 md:gap-[22px] w-full">
                 <div className="relative">
-                  <Textarea
-                    placeholder="Enter a prompt to analyze for security threats"
-                    className="min-h-[120px] md:min-h-[164px] bg-[#040022] border-[#546ff6e3] rounded-2xl md:rounded-[20px] shadow-[0px_0px_0px_4px_#d6d1ff33] text-[#6e6eff] text-base md:text-lg lg:text-xl [font-family:'Mozilla_Text',Helvetica] font-normal placeholder:text-[#6e6eff] resize-none p-4"
-                  />
+                 <Textarea
+  placeholder="Enter a prompt to analyze for security threats"
+  className="
+    min-h-[120px] md:min-h-[164px] 
+    bg-[#040022] border-[#546ff6e3] 
+    rounded-2xl md:rounded-[20px] 
+    focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 
+    focus:shadow-[0px_0px_0px_4px_#d6d1ff33] 
+    text-[#6e6eff] text-base md:text-lg lg:text-xl 
+    [font-family:'Mozilla_Text',Helvetica] font-normal 
+    placeholder:text-[#6e6eff] resize-none p-4 securityThreat
+  "
+/>
+
                 </div>
 
                 <div className="flex items-center justify-end">
-                  <Button
-                    variant="outline"
-                    className="h-auto px-4 md:px-6 py-3 md:py-3.5 border border-solid bg-transparent relative rounded-xl"
-                  >
-                    <span className="[font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
-                      Click To Use A Sample Prompt
-                    </span>
-                    <img
-                      className="w-3 h-3 md:w-[10.47px] md:h-[10.47px] ml-2.5"
-                      alt="Group"
-                      src="/Images/RightArrow.png"
-                    />
-                  </Button>
+                     <Button
+  variant="outline"
+  className="group relative h-auto px-4 md:px-6 py-3 md:py-3.5 border border-solid bg-transparent rounded-xl overflow-hidden"
+>
+  {/* Gradient overlay */}
+  <span className="absolute inset-0 bg-gradient-to-r from-[#482CFF] to-[#AAD8FF] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></span>
+
+  <span className="[font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap relative z-10">
+    Click To Use A Sample Prompt
+  </span>
+  <ArrowRight
+    className="relative z-10 w-4 h-4 ml-1 transition-transform duration-1000 ease-in-out group-hover:translate-x-1"
+    strokeWidth={2.5}
+    color="white"
+  />
+</Button>
+
+
                 </div>
 
-                <div className="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between pl-4 pr-3 md:pr-[15px] py-2 bg-[#ffffff08] rounded-2xl">
+                {/* <div className="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between pl-4 pr-3 md:pr-[15px] py-2 bg-[#ffffff08] rounded-2xl">
                   <div className="flex items-center gap-2 flex-1">
                     <img className="w-5 h-5 md:w-6 md:h-6" alt="Banned" src="/Images/banned.svg" />
                     <span className="[font-family:'Mozilla_Text',Helvetica] font-normal text-white text-sm md:text-base tracking-[0] leading-[normal]">
@@ -65,7 +81,7 @@ export const  SecurityDemo = (): JSX.Element => {
                       89% Confidence
                     </span>
                   </Badge>
-                </div>
+                </div> */}
               </div>
             </div>
           </CardContent>

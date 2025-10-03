@@ -138,3 +138,8 @@ html, body {
 .mozilla-text {
   font-family: "Mozilla Text", sans-serif;
 }
+/* in globals.css */
+textarea.securityThreat:focus {
+  outline: none !important;
+  
+}

@@ -2,7 +2,7 @@ import { ArrowRight, Shield, Eye, Cpu } from "lucide-react";
 
 const HowItWorksSection = () => {
   return (
-    <section className="bg-gradient-dark py-20 lg:py-32 relative overflow-hidden flex flex-col items-center gap-32" id="howWork">
+    <section className="bg-gradient-dark py-20 lg:py-16 relative overflow-hidden flex flex-col items-center gap-32" id="howWork">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 border border-primary/30 rounded-full"></div>
@@ -11,7 +11,7 @@ const HowItWorksSection = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-16">
+        <div className="text-center">
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent mozilla-text">
             How LangProtect Secures your AI System
           </h2>

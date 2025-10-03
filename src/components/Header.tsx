@@ -21,8 +21,8 @@ const Header = () => {
             <HashLink smooth to="#solution"  className="text-base font-light">
               Solutions
             </HashLink>
-            <HashLink  smooth to="#" className="text-base font-light">
-              Blog
+            <HashLink  smooth to="#Testimonials" className="text-base font-light">
+              Testimonials
             </HashLink>
           </nav>
 

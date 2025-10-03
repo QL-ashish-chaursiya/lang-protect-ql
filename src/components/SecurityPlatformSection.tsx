@@ -24,7 +24,7 @@ const SecurityPlatformSection = () => {
     ];
 
     return (
-        <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20 w-full">
+        <section className="py-20 px-6 bg-gradient-to-b from-background to-muted/20 w-full" id="solution">
             <div className="mx-auto text-center w-[1262px]">
                 <h2 className="text-[#19162F] mozilla-text fonSee What People Have To Sayt-semibold text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-[120%] sm:leading-[110%] md:leading-[105%] lg:leading-[100%] tracking-[0%] text-center mb-6 text-foreground sm:font-semibold">
     Unified Security platform

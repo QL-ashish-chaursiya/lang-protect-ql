@@ -25,7 +25,7 @@ const featureCards = [
 
 export const FeaturesSection = (): JSX.Element => {
   return (
-    <section className="w-full bg-[#f8f7ff] py-12 md:py-16 lg:py-[109px]" id="solution">
+    <section className="w-full bg-[#f8f7ff] py-12 md:py-16 lg:py-[109px]">
       <div className="max-w-[1262px] mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[25px]">
         <div className="flex flex-col w-full lg:w-[407px] items-start justify-center gap-6 md:gap-8">
           <div className="flex flex-col items-start gap-4 w-full">

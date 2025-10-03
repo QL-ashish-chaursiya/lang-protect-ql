@@ -6,7 +6,7 @@ import PrimaryBtn from "./common/PrimaryBtn";
 import { HashLink } from 'react-router-hash-link';
 export const Footer = (): JSX.Element => {
  
-  const navigationLinks = [ {label:'How it works',link:'#howWork'}, {label:'Solutions',link:'#solution'},,{label:'Blog',link:'#'}];
+  const navigationLinks = [ {label:'How it works',link:'#howWork'}, {label:'Solutions',link:'#solution'},,{label:'Testimonials',link:'#Testimonials'}];
 
   return (
     <div className="flex flex-col w-full items-start gap-12 md:gap-[100px] relative">
