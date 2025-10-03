@@ -2,7 +2,7 @@ import { ArrowRight, Shield, Eye, Cpu } from "lucide-react";
 
 const HowItWorksSection = () => {
   return (
-    <section className="bg-gradient-dark py-20 lg:py-16 relative overflow-hidden flex flex-col items-center gap-32" id="howWork">
+    <section className="bg-gradient-dark py-20 lg:py-16 relative overflow-hidden flex flex-col items-center" id="howWork">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 border border-primary/30 rounded-full"></div>
@@ -22,7 +22,7 @@ const HowItWorksSection = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center relative z-10">
+      <div className="flex justify-center relative z-10 mt-[76px] mb-[20px]">
         <img
           src="./Images/howItWork.svg"
           alt="LangProtect Demo"
