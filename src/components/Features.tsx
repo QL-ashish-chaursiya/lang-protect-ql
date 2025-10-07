@@ -37,8 +37,10 @@ export const FeaturesSection = (): JSX.Element => {
               Deploy in minutes, safeguard instantly. Unified AI security with full visibility and control. Trusted by healthcare, fintech, and enterprise teams to secure AI adoption.
             </p>
           </div>
-
-           <PrimaryBtn label="Let’s Secure your AI App"  handle={()=>{}} />
+            <div className="hidden md:block">
+ <PrimaryBtn label="Let’s Secure your AI App"  handle={()=>{}} />
+            </div>
+           
             
         </div>
 
@@ -80,6 +82,9 @@ export const FeaturesSection = (): JSX.Element => {
             </Card>
           ))}
         </div>
+        <div className="md:hidden">
+ <PrimaryBtn label="Let’s Secure your AI App"  handle={()=>{}} />
+            </div>
       </div>
     </section>
   );

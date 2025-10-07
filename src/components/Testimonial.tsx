@@ -73,7 +73,7 @@ export const Testimonial = (): JSX.Element => {
         </header>
 
         {/* Mobile: Single Column (no scroll, normal list) */}
-        <div className="flex md:hidden flex-col items-start gap-5 w-full">
+        <div className="flex md:hidden flex-col items-start gap-5 w-full px-[10px] mb-[25px]">
           {testimonials.map((testimonial, index) => (
             <Card
               key={`mobile-${index}`}

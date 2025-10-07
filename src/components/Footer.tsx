@@ -11,7 +11,7 @@ export const Footer = (): JSX.Element => {
   return (
     <div className="flex flex-col w-full items-start gap-12 md:gap-[100px] relative">
       <div className="flex flex-col items-center gap-12 md:gap-[100px] relative self-stretch w-full flex-[0_0_auto]">
-        <div className="relative w-full max-w-[1260px] mx-auto h-auto md:h-[426px] bg-[#0a0818] rounded-2xl md:rounded-[32px] overflow-hidden">
+        <div className="relative md:w-full mx-5 max-w-[1260px] md:mx-auto h-auto md:h-[426px] bg-[#0a0818] rounded-2xl md:rounded-[32px] overflow-hidden">
           <div className="absolute top-[-30px] md:top-[-52px] left-[100px] md:left-[239px] w-[800px] md:w-[1265px] h-[200px] md:h-[409px] rounded-[400px/100px] md:rounded-[632.26px/204.36px] border-[0.82px] border-solid rotate-[131.34deg] blur-[40px] md:blur-[71.11px] border-[#5039ff] bg-[linear-gradient(146deg,rgba(255,228,170,0.14)_0%,rgba(209,44,255,0.14)_52%,rgba(255,228,170,0.14)_100%)]" />
 
           <div className="flex flex-col w-full max-w-[810px] items-start gap-8 md:gap-12 relative z-10 p-6 md:p-12">
@@ -49,7 +49,7 @@ export const Footer = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-4 relative self-stretch w-full flex-[0_0_auto]">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-4 relative self-stretch w-full flex-[0_0_auto] mb-5">
               <div className="flex items-center space-x-3">
                 <Link
                   to="https://www.linkedin.com/company/langprotect/"
@@ -92,23 +92,31 @@ export const Footer = (): JSX.Element => {
                 </Link>
               </div>
 
-              <nav className="inline-flex flex-col md:flex-row items-start md:items-center justify-end gap-4 md:gap-[34px] relative flex-[0_0_auto]">
-                {navigationLinks.map((link, index) => (
-                  <React.Fragment key={index}>
-                    
-                         <HashLink smooth to={link.link}   className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-normal text-[#fbfbfb] text-base md:text-lg tracking-[0] leading-[normal] hover:opacity-80">
-                    {link.label}
-                    </HashLink>
-                    {index < navigationLinks.length - 1 && (
-                      <img
-                        className="hidden md:block relative w-px h-[14.99px]"
-                        alt="Vector"
-                        src="/vector-2.svg"
-                      />
-                    )}
-                  </React.Fragment>
-                ))}
-              </nav>
+             <nav
+  className="grid md:flex grid-cols-2 md:grid-cols-none items-start md:items-center justify-center md:justify-end gap-4 md:gap-[34px] relative flex-[0_0_auto]"
+>
+  {navigationLinks.map((link, index) => (
+    <React.Fragment key={index}>
+      <HashLink
+        smooth
+        to={link.link}
+        className="relative w-fit [font-family:'Mozilla_Text',Helvetica] font-normal text-[#fbfbfb] text-base md:text-lg tracking-[0] leading-[normal] hover:opacity-80"
+      >
+        {link.label}
+      </HashLink>
+
+      {/* Divider visible only on desktop */}
+      {index < navigationLinks.length - 1 && (
+        <img
+          className="hidden md:block relative w-px h-[14.99px]"
+          alt="Vector"
+          src="/vector-2.svg"
+        />
+      )}
+    </React.Fragment>
+  ))}
+</nav>
+
             </div>
           </div>
 
