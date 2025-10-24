@@ -25,8 +25,12 @@ export const Footer = (): JSX.Element => {
       Join now & get started on your journey to secure all of your AI Systems
       with simple configurations.
     </p>
-
-    <PrimaryBtn />
+<div className="hidden md:block">
+ <PrimaryBtn />
+</div>
+    <div className="md:hidden w-full">
+                  <PrimaryBtn label="Become an AI Hacker"   containerCls="w-full" btnCls="w-full" />
+                </div>
   </div>
 
   {/* Right Image Section */}

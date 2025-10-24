@@ -67,11 +67,11 @@ const SecurityPlatformSection = () => {
 
         {/* CTA Section */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-[#F8F7FF] p-6 sm:p-8">
-          <p className="w-full sm:w-[70%] text-center sm:text-left font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-[rgba(25,22,47,1)]">
+          <p className="w-full sm:w-[70%] text-left font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-[rgba(25,22,47,1)]">
             Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
           </p>
           <div className="w-full sm:w-auto flex justify-center">
-            <PrimaryBtn />
+            <PrimaryBtn  containerCls="w-full" btnCls="w-full"/>
           </div>
         </div>
       </div>

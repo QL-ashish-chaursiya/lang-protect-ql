@@ -7,15 +7,17 @@ type PrimaryBtnProps = {
   isImg?: boolean;
  label?:string;
   handle?: (url:any) => void;
-  url?:string
+  url?:string,
+  containerCls?:string,
+  btnCls?:string
 };
 
-const PrimaryBtn = ({ isImg = true,label='GET STARTED FREE', handle=handleRedirect,url=LANG_LINK }: PrimaryBtnProps) => {
+const PrimaryBtn = ({ isImg = true,label='GET STARTED FREE', handle=handleRedirect,url=LANG_LINK,containerCls='',btnCls='' }: PrimaryBtnProps) => {
   return (
-    <div className="inline-flex items-start gap-3.5 relative flex-[0_0_auto]">
+    <div  className={`className="inline-flex items-start gap-3.5 relative flex-[0_0_auto] ${containerCls}`}>
       <Button
         onClick={ () => handle(url)}
-        className="relative inline-flex md:h-[53px] items-center justify-center gap-2.5 px-6 md:px-8 py-3 md:py-3.5 flex-[0_0_auto] rounded-xl gradient-bg h-auto overflow-hidden group"
+        className={`relative inline-flex md:h-[53px] items-center justify-center gap-2.5 px-6 md:px-8 py-3 md:py-3.5 flex-[0_0_auto] rounded-xl gradient-bg h-auto overflow-hidden group ${btnCls}`}
       >
         {/* Sliding white overlay */}
         <span className="absolute left-[-100%] top-0 h-full w-full bg-white/20 transition-all duration-500 ease-in-out group-hover:left-0" />

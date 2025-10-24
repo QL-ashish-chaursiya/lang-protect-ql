@@ -56,7 +56,7 @@ export const Testimonial = (): JSX.Element => {
   const columnThree = testimonials.slice(4, 6);
 
   return (
-    <section className="relative w-full md:mt-[55px] md:mb-[120px]" id="Testimonials">
+    <section className="relative w-full md:mt-[65px] md:mb-[130px]" id="Testimonials">
       <div className="flex flex-col w-full max-w-[1262px] mx-auto items-center gap-8 md:gap-[50px]">
         <header className="flex flex-col w-full max-w-[593px] items-center justify-center gap-4">
           <h2 className="text-[#19162F] mozilla-text font-semibold text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
@@ -72,28 +72,40 @@ export const Testimonial = (): JSX.Element => {
           </div>
         </header>
 
-        {/* Mobile: Single Column (no scroll, normal list) */}
-        <div className="flex md:hidden flex-col items-start gap-5 w-full px-[10px] mb-[25px]">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={`mobile-${index}`}
-              className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none w-full`}
-            >
-              <CardContent className="p-4 flex flex-col gap-2">
-                <div className="text-sm tracking-[0] leading-[normal]">
-                  <span className="font-semibold text-[#202532]">
-                    {testimonial.name} -
-                  </span>
-                  <span className="font-semibold text-black">&nbsp;</span>
-                  <span className="text-[#4E5976]">{testimonial.title}</span>
-                </div>
-                <div className="text-[#202532] mozilla-text font-light text-[15px] leading-[normal]">
-                  {testimonial.content}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      
+    {/* Mobile: 2 cards stacked vertically per full-width slide */}
+<div className="flex md:hidden w-full overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth mb-[25px]">
+  {Array.from({ length: Math.ceil(testimonials.length / 2) }).map((_, groupIndex) => {
+    const start = groupIndex * 2;
+    const group = testimonials.slice(start, start + 2);
+    return (
+      <div
+        key={`group-${groupIndex}`}
+        className="flex flex-col gap-4 flex-shrink-0 w-full snap-start px-4"
+      >
+        {group.map((testimonial, index) => (
+          <Card
+            key={`mobile-${groupIndex}-${index}`}
+            className={`${testimonial.bgColor} ${testimonial.rounded} border-0 shadow-none w-full`}
+          >
+            <CardContent className="p-4 flex flex-col gap-2">
+              <div className="text-sm tracking-[0] leading-[normal]">
+                <span className="font-semibold text-[#202532]">{testimonial.name} - </span>
+                <span className="text-[#4E5976]">{testimonial.title}</span>
+              </div>
+              <div className="text-[#202532] mozilla-text font-light text-[15px] leading-[normal]">
+                {testimonial.content}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    );
+  })}
+</div>
+
+
+
 
         {/* Desktop: Three Columns with Infinite Scroll */}
         <div className="hidden md:flex items-start gap-[19px] w-full">

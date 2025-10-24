@@ -11,7 +11,7 @@ const featureCards = [
   
     image: "/Images/Layer_1.png",
     imageClasses:
-      "absolute h-[64.87%] top-[44.55%] left-[calc(50.00%_-_5px)] w-[209px]",
+      "relative bottom-[-23px] md:absolute h-[64.87%] top-[44.55%] left-[calc(50.00%_-_5px)] w-[209px]",
   },
   {
     title: "Fully LLM-Agnostic",
@@ -19,7 +19,7 @@ const featureCards = [
       "Works with ChatGPT, Claude, Gemini, or any other system. Your AI choice stays yours security just works.",
     
     image: "/Images/Group.png",
-    imageClasses: "absolute top-[201px] left-[196px] w-[211px] h-[268px]",
+    imageClasses: "relative bottom-[-23px] left-[154px] md:absolute md:top-[201px] md:left-[196px] w-[211px] h-[268px]",
   },
 ];
 
@@ -74,7 +74,7 @@ export const FeaturesSection = (): JSX.Element => {
                 </Button> */}
 
                 <img
-                  className={`hidden md:block ${card.imageClasses}`}
+                  className={` ${card.imageClasses}`}
                   alt={index === 0 ? "Layer" : "Graphic elements"}
                   src={card.image}
                 />
@@ -82,8 +82,8 @@ export const FeaturesSection = (): JSX.Element => {
             </Card>
           ))}
         </div>
-        <div className="md:hidden">
- <PrimaryBtn label="Let’s Secure your AI App"  handle={()=>{}} />
+        <div className="md:hidden w-full">
+ <PrimaryBtn label="Let’s Secure your AI App"  handle={()=>{}} containerCls="w-full" btnCls="w-full" />
             </div>
       </div>
     </section>

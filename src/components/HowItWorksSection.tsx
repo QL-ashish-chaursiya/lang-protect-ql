@@ -26,13 +26,22 @@ const HowItWorksSection = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center relative z-10">
-        <img
-          src="./Images/Diagram.svg"
-          alt="LangProtect Demo"
-          className="max-w-7xl w-full"
-        />
-      </div>
+       <div className="flex justify-center relative z-10">
+  {/* Desktop / Tablet Image */}
+  <img
+    src="./Images/Diagram.svg"
+    alt="LangProtect Demo"
+    className="hidden md:block max-w-7xl w-full"
+  />
+
+  {/* Mobile Image */}
+  <img
+    src="./Images/mob_HowItWork.svg"
+    alt="LangProtect Demo Mobile"
+    className="block md:hidden w-full"
+  />
+</div>
+
     </section>
   );
 };
