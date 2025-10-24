@@ -1,94 +1,95 @@
-import React from "react";
-import { Card, CardContent } from "./ui/card";
-import { Button } from "./ui/button";
-import PrimaryBtn from "./common/PrimaryBtn";
 import { GAME_LINK } from "@/lib/constants";
+import PrimaryBtn from "./common/PrimaryBtn";
+
  
 
 export const Game = (): JSX.Element => {
-  const statsData = [
-    {
-      number: "45K +",
-      description: "Prompts tested by early players",
-    },
-    {
-      number: "24/7",
-      description: "Live leaderboard of top attackers",
-    },
-    {
-      number: "5K +",
-      description: "Community Challengers\nworldwide",
-    },
-    {
-      number: "5K +",
-      description: "New Injection patterns\nblocked every hour",
-    },
-  ];
-
   return (
-    <main className="bg-white overflow-hidden w-full min-w-[1440px] h-[924px] relative" id="Game">
-      <img
-        className="w-[100.11%] h-[31.96%] top-[62.77%] absolute left-0"
-        alt="Vector"
-        src="/Images/Game_Bg_2.svg"
-      />
+    <section className="w-full bg-[url('/Images/GameSectionbg.png')] bg-no-repeat bg-cover bg-center w-full overflow-hidden">
+      <div className="mx-auto">
+         <div className=" text-white">
+      {/* Hero Section */}
+      <div className="relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px'
+          }}></div>
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="absolute top-10 left-10 w-96 h-96 border-l-2 border-t-2 border-blue-500/20 transform -rotate-12"></div>
+            <div className="absolute top-20 left-32 w-64 h-64 border-r-2 border-b-2 border-blue-500/20 transform rotate-12"></div>
+            <div className="absolute bottom-20 left-20 w-48 h-48 border-2 border-blue-500/10"></div>
+          </div>
+        </div>
 
-      <img
-        className="w-[100.40%] h-[32.05%] top-0 absolute left-0"
-        alt="Vector"
-        src="/Images/Game_Bg_1.svg"
-      />
+        <div className="relative container mx-auto px-6 py-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left Content */}
+            <div className="space-y-8 flex flex-col justify-between h-full">
+              <div className="space-y-8">
+                <div>
+                   <h1 className="mozilla-text font-medium text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px]">
+                  Think You can Trick an AI Guard?
+                  
+                </h1>
+                 <h2 className="mozilla-text font-medium text-[26px] sm:text-[32px]">
+                 
+                  Play Our AI Escape Room game.
+                </h2>
+                </div>
+                
 
-      <img
-        className="absolute top-[207px] left-[701px] w-[603px] h-[424px]"
-        alt="Layer"
-        src="/Images/Game_mobile.svg"
-      />
+                <p className="text-[#C9C7D4] mozilla-text font-light text-[15px] sm:text-[16px] md:text-[18px] leading-relaxed max-w-xl">
+                  Challenge our AI Guard Agent with you trickiest prompts. See if you can break it, and learn how real attacks are stopped in the wild. Every attempt contributes in securing AI systems globally.
+                </p>
 
-      <section className="flex flex-wrap w-[630px] items-center gap-[16px_16px] absolute top-[561px] left-[89px]">
-        {statsData.map((stat, index) => (
-          <Card
-            key={index}
-            className="w-[234px] bg-[#0f0a1f] rounded-[20px] border-none"
-          >
-            <CardContent className="flex flex-col items-start p-4">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-[40px] tracking-[0] leading-[normal]">
-                {stat.number}
+                {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-colors">
+                  Become an AI Hacker
+                  <ArrowRight className="w-5 h-5" />
+                </button> */}
+                 <PrimaryBtn label="Become an AI Hacker" url={GAME_LINK} />
               </div>
 
-              <div className="relative self-stretch [font-family:'Mozilla_Text',Helvetica] font-medium text-white text-[15px] tracking-[0] leading-[normal] whitespace-pre-line">
-                {stat.description}
+              {/* Stats Grid */}
+              <div className="grid grid-cols-2 gap-4 md:max-w-[580px]">
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:max-w-[275px]">
+                  <div className="mozilla-text font-medium text-2xl md:text-[32px] leading-tight mb-1">45K+</div>
+                  <div className="mozilla-text font-medium text-gray-400 text-sm leading-normal md:max-w-[200px]">Prompts tested by early players</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:max-w-[275px]">
+                  <div className="mozilla-text font-medium text-2xl md:text-[32px] leading-tight mb-1">24/7</div>
+                  <div className="mozilla-text font-medium text-gray-400 text-sm leading-normal md:max-w-[200px]">Live leaderboard of top attackers</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:max-w-[275px]">
+                  <div className="mozilla-text font-medium text-2xl md:text-[32px] leading-tight mb-1">5K+</div>
+                  <div className="mozilla-text font-medium text-gray-400 text-sm leading-normal md:max-w-[200px]">Community Challengers worldwide</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:max-w-[275px]">
+                  <div className="mozilla-text font-medium text-2xl md:text-[32px] leading-tight mb-1">5K+</div>
+                  <div className="mozilla-text font-medium text-gray-400 text-sm leading-normal md:max-w-[200px]">New injection patterns blocked every hour</div>
+                </div>
               </div>
-            </CardContent>
-          </Card>
-        ))}
-      </section>
+            </div>
 
-      <section className="flex flex-col w-[401px] items-start gap-10 absolute top-[60px] left-[89px]">
-        <header className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="items-start flex flex-col justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]" />
-             <div className="flex flex-col justify-center relative self-stretch w-full flex-[0_0_auto]">
-              <h1 className="font-semibold text-[2.5rem] leading-[1]">
-        <span className="text-black">Think You can </span>
-        <span className="text-blue-600">Trick</span>
-      </h1>
-      <h2 className="font-semibold text-[2.5rem] leading-[1] text-blue-600">an AI Guard?</h2>
-      <p className="font-semibold text-[2.5rem] leading-[1] text-black">
-        Play Our AI Escape Room game.
-      </p>
+            {/* Right Image - 80% visible, 20% hidden */}
+            <div className="relative h-full flex items-stretch">
+              <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
+                <img
+                  src="/Images/Game1.svg"
+                  alt="AI Security Lab Interface"
+                  className="w-[125%] h-full object-cover object-left"
+                />
+              </div>
+            </div>
           </div>
-          <div className="items-center flex flex-col justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
-            <p className="relative flex items-center justify-center self-stretch mt-[-1.00px] [font-family:'Mozilla_Text',Helvetica] font-normal text-[#222222] text-lg tracking-[0] leading-[27px]">
-              Challenge our AI Guard Agent with you trickiest prompts. See if
-              you can break it, and learn how real attacks are stopped in the
-              wild. Evey attempt&nbsp;&nbsp;contributes in securing AI systems
-              globally
-            </p>
-          </div>
-        </header>
-
-        <PrimaryBtn label="Become an AI Hacker" url={GAME_LINK} />
-      </section>
-    </main>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
   );
 };

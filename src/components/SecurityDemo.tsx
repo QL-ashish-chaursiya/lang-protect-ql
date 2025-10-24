@@ -8,57 +8,61 @@ import { Textarea } from "./ui/textarea";
 
 export const  SecurityDemo = (): JSX.Element => {
   return (
-    <section className="relative w-full bg-[#090718] overflow-hidden py-12 md:py-20">
+    <section className="relative w-full bg-[url('/Images/securityBg.png')] bg-no-repeat bg-cover bg-center w-full overflow-hidden py-12 md:pt-20 md:pb-48">
       <div className="absolute top-8 md:top-[59px] left-[100px] md:left-[291px] w-[800px] md:w-[1547px] h-[250px] md:h-[500px] rounded-[400px/125px] md:rounded-[773.51px/250.01px] border border-solid rotate-[131.34deg] blur-[50px] md:blur-[87px] border-[#5039ff] bg-[linear-gradient(146deg,rgba(255,228,170,0.14)_0%,rgba(209,44,255,0.14)_52%,rgba(255,228,170,0.14)_100%)]" />
 
       <div className="relative z-10 flex flex-col items-center gap-8 md:gap-14 px-4 md:px-8 max-w-6xl mx-auto">
         <div className="flex flex-col items-center gap-3.5 max-w-[774px]">
-          <h2 className="bg-[linear-gradient(90deg,rgba(170,216,255,1)_0%,rgba(72,44,255,1)_100%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Mozilla_Text',Helvetica] font-semibold text-2xl md:text-3xl lg:text-[42px] text-center tracking-[0] leading-tight md:leading-[normal] mozilla-text">
+          <h2 className="text-[#19162F] font-semibold text-2xl md:text-3xl lg:text-[42px] text-center tracking-[0] leading-tight md:leading-[normal] mozilla-text">
             Try out LangProtect Security Yourself
           </h2>
 
-          <p className="font-light text-[#8ba1fe] text-base md:text-lg lg:text-xl text-center tracking-[0] leading-6 md:leading-[30px]">
+          <p className="font-light text-[#202532] text-base md:text-lg lg:text-xl text-center tracking-[0] leading-6 md:leading-[30px]">
             Write a prompt to check if its safe or try tricking it to reveal a
             secret.
           </p>
         </div>
 
-        <Card className="w-full max-w-[970px] bg-[#8c7aff24] border-none rounded-2xl md:rounded-[32px] p-6 md:p-8 lg:p-[42px]">
+        <Card className="w-full max-w-[970px] rounded-2xl md:rounded-[32px] p-6 md:p-8 lg:p-[42px]">
           <CardContent className="p-0">
             <div className="flex flex-col items-center gap-8 md:gap-12">
               <div className="flex flex-col gap-4 md:gap-[22px] w-full">
                 <div className="relative">
-                 <Textarea
+               <Textarea
   placeholder="Enter a prompt to analyze for security threats"
   className="
-    min-h-[120px] md:min-h-[164px] 
-    bg-[#040022] border-[#546ff6e3] 
-    rounded-2xl md:rounded-[20px] 
-    focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0 
-    focus:shadow-[0px_0px_0px_4px_#d6d1ff33] 
-    text-[#6e6eff] text-base md:text-lg lg:text-xl 
-    [font-family:'Mozilla_Text',Helvetica] font-normal 
-    placeholder:text-[#6e6eff] resize-none p-4 securityThreat
+    min-h-[120px] md:min-h-[164px]
+    text-[#C9C7D4] text-base md:text-lg lg:text-xl font-normal
+    placeholder:text-[#C9C7D4]
+    resize-none p-4
+    bg-transparent outline-none
+    border-0 border-b border-[#C9C7D4]
+    focus:border-0 focus:border-b-[2px] focus:border-[#5039ff]
+    focus:ring-0 focus:ring-offset-0
+    focus-visible:ring-0 focus-visible:ring-offset-0
+    transition-colors duration-200
   "
 />
+
+
 
                 </div>
 
                 <div className="flex items-center justify-end">
                      <Button
   variant="outline"
-  className="group relative h-auto px-4 md:px-6 py-3 md:py-3.5 border border-solid bg-transparent rounded-xl overflow-hidden"
+  className="group relative w-full md:w-auto h-auto px-4 md:px-6 py-4 md:py-3.5 border border-solid bg-transparent rounded-xl overflow-hidden"
 >
   {/* Gradient overlay */}
-  <span className="absolute inset-0 bg-gradient-to-r from-[#482CFF] to-[#AAD8FF] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></span>
+  <span className="absolute inset-0 bg-gradient-to-r from-[#D12CFF] to-[#FFE4AA] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></span>
 
-  <span className="[font-family:'Mozilla_Text',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap relative z-10">
+  <span className="[font-family:'Mozilla_Text',Helvetica] font-medium text-[#19162F] text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap relative z-10">
     Click To Use A Sample Prompt
   </span>
   <ArrowRight
     className="relative z-10 w-4 h-4 ml-1 transition-transform duration-1000 ease-in-out group-hover:translate-x-1"
     strokeWidth={2.5}
-    color="white"
+    color="#19162F"
   />
 </Button>
 
