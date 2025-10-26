@@ -3,7 +3,6 @@ import { handleRedirect } from "@/lib/utils";
 import { ArrowRight, Play } from "lucide-react";
 import PrimaryBtn from "./common/PrimaryBtn";
 import CustomCarousel from "./CustomCarosal";
-
 const HeroSection = () => {
   return (
     <section className="relative pt-12 sm:pt-32 md:pt-40 lg:pt-40 lg:pb-10 overflow-hidden">

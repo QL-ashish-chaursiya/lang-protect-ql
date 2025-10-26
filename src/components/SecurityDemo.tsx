@@ -23,7 +23,7 @@ export const  SecurityDemo = (): JSX.Element => {
           </p>
         </div>
 
-        <Card className="w-full max-w-[970px] rounded-2xl md:rounded-[32px] p-6 md:p-8 lg:p-[42px]">
+        <Card className="w-full max-w-[970px] rounded-2xl md:rounded-[32px] p-6 md:p-4 lg:p-[16px]">
           <CardContent className="p-0">
             <div className="flex flex-col items-center gap-8 md:gap-12">
               <div className="flex flex-col gap-4 md:gap-[22px] w-full">
@@ -34,13 +34,13 @@ export const  SecurityDemo = (): JSX.Element => {
     min-h-[120px] md:min-h-[164px]
     text-[#C9C7D4] text-base md:text-lg lg:text-xl font-normal
     placeholder:text-[#C9C7D4]
-    resize-none p-4
+    resize-none
     bg-transparent outline-none
     border-0 border-b border-[#C9C7D4]
     focus:border-0 focus:border-b-[2px] focus:border-[#5039ff]
     focus:ring-0 focus:ring-offset-0
     focus-visible:ring-0 focus-visible:ring-offset-0
-    transition-colors duration-200
+    transition-colors duration-200 p-0 rounded-none
   "
 />
 
@@ -51,18 +51,18 @@ export const  SecurityDemo = (): JSX.Element => {
                 <div className="flex items-center justify-end">
                      <Button
   variant="outline"
-  className="group relative w-full md:w-auto h-auto px-4 md:px-6 py-4 md:py-3.5 border border-solid bg-transparent rounded-xl overflow-hidden"
+  className="group relative w-full md:w-auto h-auto px-4 md:px-6 py-4 md:py-3.5 border border-solid bg-transparent rounded-xl overflow-hidden text-[#19162F] hover:text-white hover:border-transparent transition-all duration-200"
 >
   {/* Gradient overlay */}
-  <span className="absolute inset-0 bg-gradient-to-r from-[#D12CFF] to-[#FFE4AA] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></span>
+  <span className="absolute inset-0  gradient-bg  opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></span>
 
-  <span className="[font-family:'Mozilla_Text',Helvetica] font-medium text-[#19162F] text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap relative z-10">
+  <span className="[font-family:'Mozilla_Text',Helvetica] font-medium   text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap relative z-10">
     Click To Use A Sample Prompt
   </span>
   <ArrowRight
     className="relative z-10 w-4 h-4 ml-1 transition-transform duration-1000 ease-in-out group-hover:translate-x-1"
     strokeWidth={2.5}
-    color="#19162F"
+     
   />
 </Button>
 

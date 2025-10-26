@@ -4,16 +4,25 @@ import PrimaryBtn from "./common/PrimaryBtn";
 const SecurityPlatformSection = () => {
   const securityFeatures = [
     {
+       icons: "/Images/Armor3.svg",
       title: "Armor",
       description:
         "A solid but lightweight gateway that scans user prompts before they hit your LLM plus when they are sent as output, both. 30+ built-in scanners like prompt injection, PII, language, token limits, regex and keyword rules for customizations per your system needs.",
       image: "/Images/armor.svg",
     },
     {
+       icons: "/Images/Guardia1.svg",
       title: "Guardia",
       description:
         "A Chrome Extension for employees that scans every single input in any LLM chat like ChatGPT, Claude, Gemini or custom consoles detecting secrets, confidential files, and risky content before it’s sent.",
       image: "/Images/gaurdia.svg",
+    },
+    {
+       icons: "/Images/Breachers2.svg",
+      title: "Breachers Red",
+      description:
+        "A Red teaming service that assesses your AI Systems, simulates attacks, finds vulnerabilities, and delivers tailored remediation to your team for securing your AI Systems.",
+      image: "/Images/breacher.svg",
     },
      
   ];
@@ -36,16 +45,21 @@ const SecurityPlatformSection = () => {
         </div>
 
         {/* Feature Blocks */}
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-14">
           {securityFeatures.map((feature, index) => (
             <div
               key={index}
-              className={`flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20 ${
+              className={`flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 ${
                 index % 2 !== 0 ? "lg:flex-row-reverse" : ""
               }`}
             >
               {/* Text */}
               <div className="w-full lg:w-1/2">
+               <img
+                  src={feature.icons}
+                  alt={'icons'}
+                  className="w-full max-w-[73px] max-h-[75px] mx-auto md:mx-0"
+                />
                 <h3 className="text-[#19162F] mozilla-text font-semibold text-[24px] md:text-[28px] mb-4 text-center md:text-left">
                   {feature.title}
                 </h3>

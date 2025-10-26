@@ -36,7 +36,7 @@ const HowItWorksSection = () => {
 
   {/* Mobile Image */}
   <img
-    src="./Images/mob_HowItWork.svg"
+    src="./Images/xyz.svg"
     alt="LangProtect Demo Mobile"
     className="block md:hidden w-full"
   />

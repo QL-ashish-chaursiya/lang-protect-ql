@@ -62,7 +62,7 @@ const JordsStyleCarousel = () => {
         }}
         loop={true}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="jords-swiper w-full"
+        className="jords-swiper w-full hidden md:block"
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i} className="jords-slide">
@@ -81,7 +81,7 @@ const JordsStyleCarousel = () => {
       </Swiper>
 
       {/* Navigation Arrows */}
-      <div className="flex items-center gap-4">
+      <div className="hidden md:flex items-center gap-4">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="nav-button"
@@ -187,7 +187,7 @@ const JordsStyleCarousel = () => {
         }
 
     .jords-swiper .swiper-pagination-bullet {
-  width: 75.49px;
+  width: 52.49px;
   height: 8.65px;
   border-radius: 40px;
   background-color: #cbd5e1;
@@ -199,7 +199,7 @@ const JordsStyleCarousel = () => {
 
 .jords-swiper .swiper-pagination-bullet-active {
   background-color: #A59BED;
-  width: 75.49px;
+  width: 52.49px;
   border-radius: 40px;
 }
 

@@ -11,25 +11,12 @@ export const Game = (): JSX.Element => {
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px'
-          }}></div>
-          <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-10 left-10 w-96 h-96 border-l-2 border-t-2 border-blue-500/20 transform -rotate-12"></div>
-            <div className="absolute top-20 left-32 w-64 h-64 border-r-2 border-b-2 border-blue-500/20 transform rotate-12"></div>
-            <div className="absolute bottom-20 left-20 w-48 h-48 border-2 border-blue-500/10"></div>
-          </div>
-        </div>
+        
 
-        <div className="relative container mx-auto px-6 py-10 md:py-20">
+        <div className="relative mx-auto pl-6 py-10 md:py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content */}
-            <div className="space-y-8 flex flex-col justify-between h-full">
+            <div className="space-y-8 flex flex-col justify-between h-full md:pl-[100px]">
               <div className="space-y-8">
                 <div>
                    <h1 className="mozilla-text font-medium text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px]">
@@ -88,15 +75,17 @@ export const Game = (): JSX.Element => {
                   <PrimaryBtn label="Become an AI Hacker" url={GAME_LINK} containerCls="w-full" btnCls="w-full" />
                 </div>
             {/* Right Image - 80% visible, 20% hidden */}
-            <div className="hidden md:flex relative h-full items-stretch">
-              <div className="relative w-full overflow-hidden rounded-2xl shadow-2xl">
-                <img
-                  src="/Images/Game1.svg"
-                  alt="AI Security Lab Interface"
-                  className="w-[125%] h-full object-cover object-left"
-                />
-              </div>
-            </div>
+         <div className="hidden md:flex relative h-full items-stretch justify-end">
+  <div className="relative  overflow-visible rounded-2xl shadow-2xl">
+    <img
+      src="/Images/Game1.svg"
+      alt="AI Security Lab Interface"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
+
+
           </div>
         </div>
       </div>

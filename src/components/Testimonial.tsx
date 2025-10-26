@@ -61,7 +61,7 @@ export const Testimonial = (): JSX.Element => {
         <header className="flex flex-col w-full max-w-[593px] items-center justify-center gap-4">
           <h2 className="text-[#19162F] mozilla-text font-semibold text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
             <span>See What People H</span>
-            <span className="text-3xl md:text-4xl lg:text-[42px]">ave</span>
+            <span className="md:text-4xl lg:text-[42px]">ave</span>
             <span> To Say</span>
           </h2>
           <div className="md:px-2">
@@ -108,7 +108,9 @@ export const Testimonial = (): JSX.Element => {
 
 
         {/* Desktop: Three Columns with Infinite Scroll */}
-        <div className="hidden md:flex items-start gap-[19px] w-full">
+        <div className="hidden md:flex items-start gap-[19px] w-full bg-[linear-gradient(to_bottom,white_0%,rgba(255,255,255,0)_40%,white_100%)]">
+            <div className="absolute bottom-0 left-0 w-full h-[20%] bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_0%,white_100%)] pointer-events-none z-10"></div>
+
           {/* Column One */}
           <div className="relative overflow-hidden h-[500px] flex flex-col w-full max-w-[406px]">
             <div className="flex flex-col gap-5 animate-[scrollUp_10s_linear_infinite]">
