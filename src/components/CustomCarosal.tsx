@@ -157,10 +157,10 @@ const JordsStyleCarousel = () => {
         /* Inactive slides styling */
         .jords-swiper .swiper-slide {
           opacity: 1;
-          transform: scale(0.85);
+           
           transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
+        
         .jords-swiper .swiper-slide .image-wrapper {
           box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
         }
@@ -243,6 +243,15 @@ const JordsStyleCarousel = () => {
         .jords-swiper .swiper-wrapper {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
         }
+          /* Ensure all slides render above each other properly */
+.jords-swiper .swiper-slide {
+  transform: none !important; /* remove coverflow's default 3D transform */
+  margin: 0 20px !important; /* add spacing between slides */
+  z-index: 1 !important;
+}
+
+ 
+
       `}</style>
     </div>
   );
