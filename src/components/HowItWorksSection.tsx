@@ -2,7 +2,7 @@ import { ArrowRight, Shield, Eye, Cpu } from "lucide-react";
 
 const HowItWorksSection = () => {
   return (
-    <section className="bg-gradient-dark py-20 lg:py-16 relative overflow-hidden flex flex-col items-center" id="howWork">
+    <section className="bg-gradient-dark py-10 md:py-20 lg:py-16 relative overflow-hidden flex flex-col items-center" id="howWork">
        <div
        className="absolute top-0 left-0 w-full h-[280px] md:h-[340px] bg-no-repeat bg-top bg-cover pointer-events-none"
        style={{ backgroundImage: "url('/Images/HowItWorkBg.png')" }}
@@ -15,11 +15,11 @@ const HowItWorksSection = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center">
-          <h2 className="text-[24px] md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent mozilla-text">
+        <div className="text-center text-white">
+          <h2 className="text-[24px] md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent mozilla-text text-white">
             How LangProtect Secures your AI System
           </h2>
-          <p className="text-lg text-[#8BA1FE] max-w-3xl mx-auto  mozilla-text font-light">
+          <p className="text-lg   max-w-3xl mx-auto  mozilla-text font-light">
             By offering sanitization, detection of harmful language, prevention of data leakage,
             and resistance against prompt injection attacks, LangProtect ensures that
             interactions with your LLMs remain safe and secure.

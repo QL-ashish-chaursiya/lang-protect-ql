@@ -40,7 +40,8 @@ export const  SecurityDemo = (): JSX.Element => {
     focus:border-0 focus:border-b-[2px] focus:border-[#5039ff]
     focus:ring-0 focus:ring-offset-0
     focus-visible:ring-0 focus-visible:ring-offset-0
-    transition-colors duration-200 p-0 rounded-none
+    transition-colors duration-200 pt-[20px] px-0 pb-0
+ rounded-none
   "
 />
 

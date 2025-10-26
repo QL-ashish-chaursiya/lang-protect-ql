@@ -13,7 +13,7 @@ export const Game = (): JSX.Element => {
         {/* Background Pattern */}
         
 
-        <div className="relative mx-auto pl-6 py-10 md:py-20">
+        <div className="relative mx-auto px-6 md:pr-0 py-10 md:py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content */}
             <div className="space-y-8 flex flex-col justify-between h-full md:pl-[100px]">
