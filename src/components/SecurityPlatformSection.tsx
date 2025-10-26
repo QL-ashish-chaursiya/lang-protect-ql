@@ -58,7 +58,7 @@ const SecurityPlatformSection = () => {
                <img
                   src={feature.icons}
                   alt={'icons'}
-                  className="w-full max-w-[73px] max-h-[75px] mx-auto md:mx-0"
+                  className="w-full max-w-[73px] max-h-[75px] mx-auto md:mx-0 hidden md:blcok"
                 />
                 <h3 className="text-[#19162F] mozilla-text font-semibold text-[24px] md:text-[28px] mb-4 text-center md:text-left">
                   {feature.title}
@@ -69,7 +69,7 @@ const SecurityPlatformSection = () => {
               </div>
 
               {/* Image */}
-              <div className="w-full lg:w-1/2 flex justify-center">
+              <div className="w-full lg:w-1/2 flex justify-center basis-[fit-content]">
                 <img
                   src={feature.image}
                   alt={feature.title}
@@ -81,14 +81,14 @@ const SecurityPlatformSection = () => {
         </div>
 
         {/* CTA Section */}
-        {/* <div className="mt-20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-[#F8F7FF] p-6 sm:p-8">
+        <div className="mt-20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-[#F8F7FF] p-6 sm:p-8">
           <p className="w-full sm:w-[70%] text-left font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-[rgba(25,22,47,1)]">
             Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
           </p>
           <div className="w-full sm:w-auto flex justify-center">
             <PrimaryBtn containerCls="w-full" btnCls="w-full" />
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
