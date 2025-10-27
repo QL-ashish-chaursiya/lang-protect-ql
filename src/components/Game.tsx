@@ -41,11 +41,11 @@ export const Game = (): JSX.Element => {
                 <div className="hidden md:block">
                   <PrimaryBtn label="Become an AI Hacker" url={GAME_LINK} />
                 </div>
-                  <div className="md:hidden relative w-full overflow-hidden rounded-2xl shadow-2xl">
+                  <div className="md:hidden w-full">
                 <img
                   src="/Images/mob_game.svg"
                   alt="AI Security Lab Interface"
-                  className="h-full object-cover"
+                  className="h-full object-cove"
                 />
               </div>
               </div>
