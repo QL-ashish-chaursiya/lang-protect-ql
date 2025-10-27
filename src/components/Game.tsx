@@ -19,7 +19,7 @@ export const Game = (): JSX.Element => {
             <div className="space-y-8 flex flex-col justify-between h-full md:pl-[100px]">
               <div className="space-y-8">
                 <div>
-                   <h1 className="mozilla-text font-medium text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px]">
+                   <h1 className="mozilla-text font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px]">
                   Think You can Trick an AI Guard?
                   
                 </h1>

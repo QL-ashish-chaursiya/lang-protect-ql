@@ -32,7 +32,7 @@ export const  SecurityDemo = (): JSX.Element => {
   placeholder="Enter a prompt to analyze for security threats"
   className="
     min-h-[120px] md:min-h-[164px]
-    text-[#C9C7D4] text-base md:text-lg lg:text-xl font-normal
+    text-black text-base md:text-lg lg:text-xl font-normal
     placeholder:text-[#C9C7D4]
     resize-none
     bg-transparent outline-none

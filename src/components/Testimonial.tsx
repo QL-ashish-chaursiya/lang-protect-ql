@@ -59,7 +59,7 @@ export const Testimonial = (): JSX.Element => {
     <section className="relative w-full md:mt-[65px] md:mb-[130px]" id="Testimonials">
       <div className="flex flex-col w-full max-w-[1262px] mx-auto items-center gap-8 md:gap-[50px]">
         <header className="flex flex-col w-full max-w-[593px] items-center justify-center gap-4">
-          <h2 className="text-[#19162F] mozilla-text font-semibold text-2xl md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
+          <h2 className="text-[#19162F] mozilla-text font-semibold text-[24px] md:text-3xl lg:text-[40px] text-center tracking-[0] leading-tight md:leading-[normal]">
             <span>See What People H</span>
             <span className="md:text-4xl lg:text-[42px]">ave</span>
             <span> To Say</span>

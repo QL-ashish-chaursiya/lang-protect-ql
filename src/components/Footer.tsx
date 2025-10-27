@@ -17,7 +17,7 @@ export const Footer = (): JSX.Element => {
 
   {/* Left Text Section */}
   <div className="flex flex-col items-start gap-6 md:gap-8 relative z-10">
-    <h2 className="font-bold text-white text-2xl md:text-3xl lg:text-[40px] leading-tight md:leading-[normal]">
+    <h2 className="font-semibold text-white text-2xl md:text-3xl lg:text-[40px] leading-tight md:leading-[normal]">
       Ready to Secure your AI End-to-End?
     </h2>
 

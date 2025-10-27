@@ -18,7 +18,7 @@ const HeroSection = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-2 sm:px-0">
-          <h1 className="text-2xl sm:text-4xl lg:text-[56px] font-bold md:font-medium text-[#19162F] mozilla-text mb-4 sm:mb-6 tracking-tight leading-snug sm:leading-tight">
+          <h1 className="text-[28px] sm:text-4xl lg:text-[56px] font-bold md:font-medium text-[#19162F] mozilla-text mb-4 sm:mb-6 tracking-tight leading-snug sm:leading-tight">
             Security Platform for AI Systems
           </h1>
 

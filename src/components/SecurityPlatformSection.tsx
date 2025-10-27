@@ -35,7 +35,7 @@ const SecurityPlatformSection = () => {
       <div className="max-w-[1262px] mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-[#19162F] mozilla-text font-semibold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight tracking-normal mb-6">
+          <h2 className="text-[#19162F] mozilla-text font-semibold text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] leading-tight tracking-normal mb-4">
             Unified Security Platform
           </h2>
           <p className="text-[#202532] mozilla-text font-light text-[15px] sm:text-[16px] md:text-[18px] leading-relaxed max-w-3xl mx-auto">
@@ -49,7 +49,7 @@ const SecurityPlatformSection = () => {
           {securityFeatures.map((feature, index) => (
             <div
               key={index}
-              className={`flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 ${
+              className={`flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16 ${
                 index % 2 !== 0 ? "lg:flex-row-reverse" : ""
               }`}
             >
@@ -58,9 +58,9 @@ const SecurityPlatformSection = () => {
                <img
                   src={feature.icons}
                   alt={'icons'}
-                  className="w-full max-w-[73px] max-h-[75px] mx-auto md:mx-0 hidden md:block"
+                  className="w-[32px] h-[32px] md:w-full max-w-[73px] max-h-[75px] mb-2"
                 />
-                <h3 className="text-[#19162F] mozilla-text font-semibold text-[24px] md:text-[28px] mb-4 text-center md:text-left">
+                <h3 className="text-[#19162F] mozilla-text font-semibold text-[22px] md:text-[28px] mb-4">
                   {feature.title}
                 </h3>
                 <p className="text-[#4E5976] text-[15px] sm:text-[16px] leading-relaxed">
@@ -81,7 +81,7 @@ const SecurityPlatformSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-[#F8F7FF] p-6 sm:p-8">
+        <div className="mt-12 md:mt-20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl bg-[#F8F7FF] p-6 sm:p-8">
           <p className="w-full sm:w-[70%] text-left font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-[rgba(25,22,47,1)]">
             Move fast with AI without the fear. Our security suite safeguards your innovation so you can scale confidently.
           </p>

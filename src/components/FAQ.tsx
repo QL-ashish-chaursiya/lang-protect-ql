@@ -50,7 +50,7 @@ const FAQ = () => {
         <div className="flex flex-col mb-12 text-center">
           <div>
             <h2
-              className="text-[#19162F] mozilla-text font-bold text-[22px] md:text-[44px] leading-[120%] tracking-[0.02em] text-center text-foreground mb-4"
+              className="text-[#19162F] mozilla-text font-semibold text-[24px] md:text-[44px] leading-[120%] tracking-[0.02em] text-center text-foreground md:mb-4"
             >
               Frequently Asked Questions
             </h2>

@@ -16,7 +16,7 @@ const HowItWorksSection = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center text-white">
-          <h2 className="text-[24px] md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent mozilla-text text-white">
+          <h2 className="text-[24px] md:text-4xl font-semibold mb-4 bg-gradient-to-r from-[#AAD8FF] to-[#482CFF] bg-clip-text text-transparent mozilla-text text-white">
             How LangProtect Secures your AI System
           </h2>
           <p className="text-lg   max-w-3xl mx-auto  mozilla-text font-light">
