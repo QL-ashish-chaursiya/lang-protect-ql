@@ -58,7 +58,7 @@ const SecurityPlatformSection = () => {
                <img
                   src={feature.icons}
                   alt={'icons'}
-                     className="w-[32px] h-[32px]  md:w-[73px] md:h-[75px] mb-2"
+                  className="w-[32px] h-[32px]  md:w-[73px] md:h-[75px] mb-2"
                 />
                 <h3 className="text-[#19162F] mozilla-text font-semibold text-[22px] md:text-[28px] mb-4">
                   {feature.title}
