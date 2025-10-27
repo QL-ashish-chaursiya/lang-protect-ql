@@ -45,7 +45,7 @@ export const Game = (): JSX.Element => {
                 <img
                   src="/Images/mob_game.svg"
                   alt="AI Security Lab Interface"
-                  className="h-full object-cove"
+                  className="h-full w-full object-contain block"
                 />
               </div>
               </div>
