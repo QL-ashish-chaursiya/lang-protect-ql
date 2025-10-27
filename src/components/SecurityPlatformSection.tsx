@@ -1,4 +1,4 @@
- import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+  import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import PrimaryBtn from "./common/PrimaryBtn";
 
 const SecurityPlatformSection = () => {
@@ -70,11 +70,23 @@ const SecurityPlatformSection = () => {
 
               {/* Image */}
               <div className="w-full lg:w-1/2 flex justify-center basis-[fit-content]">
-                <img
+              {feature.title=='Breachers Red' ? <>
+               <img
+                  src={'/Images/breacher1.svg'}
+                  alt={feature.title}
+                  className="md:hidden w-full max-w-[500px] rounded-2xl border border-[#E3E6FF] bg-[#F8F7FF] shadow-sm"
+                />
+               <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="hidden md:block w-full max-w-[500px] rounded-2xl border border-[#E3E6FF] bg-[#F8F7FF] shadow-sm"
+                />
+              </>: <img
                   src={feature.image}
                   alt={feature.title}
                   className="w-full max-w-[500px] rounded-2xl border border-[#E3E6FF] bg-[#F8F7FF] shadow-sm"
-                />
+                />}
+                
               </div>
             </div>
           ))}
