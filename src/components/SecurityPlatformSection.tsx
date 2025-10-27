@@ -72,7 +72,7 @@ const SecurityPlatformSection = () => {
               <div className="w-full lg:w-1/2 flex justify-center basis-[fit-content]">
               {feature.title=='Breachers Red' ? <>
                <img
-                  src={'/Images/breacher1.svg'}
+                  src={'/Images/breacher1.png'}
                   alt={feature.title}
                   className="md:hidden w-full max-w-[500px] rounded-2xl border border-[#E3E6FF] bg-[#F8F7FF] shadow-sm"
                 />

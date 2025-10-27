@@ -151,7 +151,6 @@ textarea.securityThreat:focus {
     transform: translateY(-50%);
   }
 }
-
 img {
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
